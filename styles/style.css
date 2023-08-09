@@ -16,9 +16,11 @@
   background: #fff;
   height: 88px;
   padding: 18px 16px;
+  box-sizing: border-box;
+}
+.menu__container {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 .menu__list {
   list-style-type: none;
@@ -35,29 +37,37 @@
 .menu__list-item_hidden {
   display: none;
 }
+.menu__right {
+  display: flex;
+}
+.menu__repair {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
 .menu__list-item_burger::after {
   content: "";
   display: none;
-  width: 2px;
+  width: 3px;
   height: 32px;
   flex-shrink: 0;
   border-radius: 1px;
   background: #eaeaea;
   position: relative;
-  left: 16px;
+  left: 20px;
   top: -3px;
 }
 .menu__list-item_group::after {
   content: "";
   display: inline-block;
-  width: 2px;
+  width: 3px;
   height: 32px;
   flex-shrink: 0;
   border-radius: 1px;
   background: #eaeaea;
   position: relative;
   left: 16px;
-  top: -3px;
+  top: -7px;
 }
 .menu__list-item_profile::after {
   content: "";
@@ -68,8 +78,13 @@
   border-radius: 1px;
   background: #eaeaea;
   position: relative;
-  left: 16px;
+  left: 20px;
   top: -3px;
+}
+
+.repair__list-item {
+  margin-left: 16px;
+  cursor: pointer;
 }
 
 .content__body {
@@ -78,6 +93,9 @@
   overflow: hidden;
   min-height: 509px;
   background: #f8f8f8;
+}
+.content__repair {
+  display: none;
 }
 .content__title {
   display: flex;
@@ -108,9 +126,11 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  overflow: scroll;
 }
 .content__list-item {
   box-sizing: border-box;
+  display: flex;
   margin-right: 25px;
   padding: 8px;
   flex-shrink: 0;
@@ -120,11 +140,11 @@
   margin-right: 0;
 }
 .content__list-item:hover {
-  border-radius: 6px;
+  border-radius: 7px;
   border: 2px solid #b8ffec;
   box-sizing: border-box;
   background: #fff;
-  padding: 6px;
+  padding: 7px;
 }
 .content__text {
   color: #7e7e82;
@@ -132,7 +152,7 @@
   font-size: 1.14rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.2px;
 }
 .content__description {
@@ -170,7 +190,7 @@
   font-size: 1.14rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.7rem; /* 150% */
+  line-height: 1.7rem;
   letter-spacing: -0.2px;
 }
 .content__description-images {
@@ -188,38 +208,23 @@
     margin: 0 auto;
     min-width: 768px;
   }
-  .menu__list-item_burger:first-child {
-    margin-right: 34px;
+  .menu__list-item_burger {
+    margin-right: 42px;
   }
   .menu__list-item:nth-child(3) {
-    margin-right: 34px;
+    margin-right: 26px;
   }
   .menu__list-item_burger::after {
-    content: "";
     display: inline-block;
-    width: 2px;
-    height: 32px;
-    flex-shrink: 0;
-    border-radius: 1px;
-    background: #eaeaea;
-    position: relative;
-    left: 16px;
-    top: -3px;
   }
   .menu__list-item_group::after {
-    content: "";
     display: none;
-    width: 2px;
-    height: 32px;
-    flex-shrink: 0;
-    border-radius: 1px;
-    background: #eaeaea;
-    position: relative;
-    left: 16px;
-    top: -3px;
   }
   .menu__list-item_hidden {
     display: block;
+  }
+  .menu__repair {
+    margin-right: 24px;
   }
   .content__body {
     margin: 0 auto;
@@ -261,18 +266,9 @@
 }
 @media screen and (min-width: 1120px) {
   .menu__body {
+    display: none;
     margin: 0 auto;
     width: 1120px;
-    justify-content: flex-end;
-    position: relative;
-    background: #f8f8f8;
-    top: 88px;
-  }
-  .menu__list_left-group {
-    display: none;
-  }
-  .menu__list-item_hidden {
-    display: none;
   }
   .menu__list-item {
     margin-right: 40px;
@@ -286,14 +282,14 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: -0.2px;
     position: relative;
     left: -20px;
     top: -15px;
   }
   .menu__list-item_checkstatus::before {
-    content: "Оставить заявку";
+    content: "Статус ремонта";
     display: inline;
     color: #1B1C21;
     text-align: right;
@@ -301,19 +297,39 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: -0.2px;
     position: relative;
     left: -20px;
     top: -15px;
   }
+  .repair__list-item {
+    margin-right: 40px;
+  }
   .content__body {
     margin: 0 auto;
     width: 1120px;
+  }
+  .content__header {
+    display: flex;
+    justify-content: space-between;
   }
   .content__title {
     padding: 24px 24px 32px;
     position: relative;
     z-index: 1000;
+  }
+  .content__repair {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  .content__list {
+    overflow: hidden;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .content__list-item {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
