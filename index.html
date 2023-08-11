@@ -13,20 +13,20 @@
 		<nav class="menu">
 			<div class="menu__body">
 				<div class="menu__container">
-					<ul class="menu__list menu__list_left-group">
-						<li class="menu__list-item menu__list-item_burger"><img src="images/menu/burger.svg" alt="burger"></li>
-						<li class="menu__list-item menu__list-item_group"><img src="images/menu/Group.svg" alt="group"></li>
-					</ul>
+					<div class="menu__list">
+						<button class="menu__list-item menu__list-item_burger"></button>
+						<button class="menu__list-item menu__list-item_group"><img src="images/menu/Group.svg" alt="group"></button>
+					</div>
 					<div class="menu__right">
-						<ul class="menu__list menu__list_left-group">
-							<li class="menu__list-item menu__list-item_hidden"><img src="images/menu/call.svg" alt="call"></li>
-							<li class="menu__list-item menu__list-item_hidden"><img src="images/menu/chat.svg" alt="chat"></li>
-							<li class="menu__list-item menu__list-item_hidden menu__list-item_profile"><img src="images/menu/profile.svg" alt="profile"></li>
-						</ul>
-						<ul class="repair menu__repair">
-							<li class="repair__list-item"><img src="images/menu/repair.svg" alt="repair"></li>
-							<li class="repair__list-item"><img src="images/menu/checkstatus.svg" alt="checkstatus"></li>
-						</ul>
+						<div class="menu__list">
+							<button class="menu__list-item menu__list-item_hidden menu__list-item_call"></button>
+							<button class="menu__list-item menu__list-item_hidden menu__list-item_chat"></button>
+							<button class="menu__list-item menu__list-item_hidden menu__list-item_profile"></button>
+						</div>
+						<div class="repair menu__repair">
+							<button class="repair__list-item repair__list-item_repair"></button>
+							<button class="repair__list-item repair__list-item_checkstatus"></button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -38,32 +38,34 @@
 			<div class="content__body">
 				<div class="content__header">
 					<h1 class="content__title">Услуги и сервисы</h1>
-					<ul class="repair content__repair">
-						<li class="repair__list-item menu__list-item_repair"><img src="images/menu/repair.svg" alt="repair"></li>
-						<li class="repair__list-item menu__list-item_checkstatus"><img src="images/menu/checkstatus.svg" alt="checkstatus"></li>
-					</ul>
+					<div class="repair content__repair">
+						<button class="repair__list-item repair__list-item_repair"></button>
+						<button class="repair__list-item repair__list-item_checkstatus"></button>
+					</div>
 				</div>
-				<ul class="content__list clearfix">
-					<li class="content__list-item">
-						<p class="content__text">Ремонтируемые бренды</p>
-					</li>
-					<li class="content__list-item">
-						<p class="content__text">Ремонтируемые устройства</p>
-					</li>
-					<li class="content__list-item">
-						<p class="content__text">Цены на услуги</p>
-					</li>
-					<li class="content__list-item">
-						<p class="content__text">Адреса сервисных центров</p>
-					</li>
-					<li class="content__list-item">
-						<p class="content__text">Специальные цены</p>
-					</li>
-					<li class="content__list-item">
-						<p class="content__text">Отзывы</p>
-					</li>
-				</ul>
-				<div class="content__description">
+				<nav>
+					<ul class="content__list clearfix">
+						<li class="content__list-item">
+							<a class="content__text">Ремонтируемые бренды</a>
+						</li>
+						<li class="content__list-item">
+							<a class="content__text">Ремонтируемые устройства</a>
+						</li>
+						<li class="content__list-item">
+							<a class="content__text">Цены на услуги</a>
+						</li>
+						<li class="content__list-item">
+							<address class="content__text">Адреса сервисных центров</address>
+						</li>
+						<li class="content__list-item">
+							<a class="content__text">Специальные цены</a>
+						</li>
+						<li class="content__list-item">
+							<a class="content__text">Отзывы</a>
+						</li>
+					</ul>
+				</nav>
+				<article class="content__description">
 					<div class="content__container">
 						<div class="content__description-container">
 							<p class="content__description-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
@@ -84,7 +86,7 @@
 					<div class="content__description-images">
 						<img class="content__images" src="images/CPS.jpg" alt="splash screen">
 					</div>
-				</div>
+				</article>
 			</div>
 		</section>
 	</main>

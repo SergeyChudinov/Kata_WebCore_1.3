@@ -12,12 +12,13 @@
     justify-content: space-between;
   }
   &__list {
-    list-style-type: none;
     display: flex;
     align-items: center;
   }
   &__list-item {
     margin-right: 16px;
+    border: none;
+    background-color: #fff;
     cursor: pointer;
   }
   &__list-item:last-child {
@@ -32,7 +33,26 @@
   &__repair {
     display: flex;
     align-items: center;
-    list-style-type: none;
+  }
+  &__list-item_burger {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/menu/burger.svg');
+  }
+  &__list-item_call {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/menu/call.svg');
+  }
+  &__list-item_chat {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/menu/chat.svg');
+  }
+  &__list-item_profile {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/menu/profile.svg');
   }
   &__list-item_burger::after {
     content: "";
@@ -43,8 +63,8 @@
     border-radius: 1px;
     background: #eaeaea;
     position: relative;
-    left: 20px;
-    top: -3px;
+    left: 40px;
+    top: 0px;
   }
   &__list-item_group::after {
     content: "";
@@ -67,7 +87,26 @@
     border-radius: 1px;
     background: #eaeaea;
     position: relative;
-    left: 20px;
-    top: -3px;
+    left: 40px;
+    top: 0px;
+  }
+}
+
+.repair {
+  &__list-item {
+    margin-left: 16px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  &__list-item_repair {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/menu/repair.svg');
+  }
+  &__list-item_checkstatus {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/menu/checkstatus.svg');
   }
 }
