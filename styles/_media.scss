@@ -78,9 +78,17 @@
     &__list-item {
       margin-right: 40px;
     }
+  }
+
+  .repair {
+    &__list-item {
+      margin-right: 40px;
+      margin-left: 140px;
+    }
     &__list-item_repair::before {
       content: "Оставить заявку";
-      display: inline;
+      width: 125px;
+      display: inline-block;
       color: #1B1C21;
       text-align: right;
       font-family: TT Lakes;
@@ -90,12 +98,13 @@
       line-height: 24px; 
       letter-spacing: -0.2px;
       position: relative;
-      left: -20px;
-      top: -15px;
+      left: -140px;
+      top: 0px;
     }
     &__list-item_checkstatus::before {
       content: "Статус ремонта";
-      display: inline;
+      width: 125px;
+      display: inline-block;
       color: #1B1C21;
       text-align: right;
       font-family: TT Lakes;
@@ -105,14 +114,8 @@
       line-height: 24px;
       letter-spacing: -0.2px;
       position: relative;
-      left: -20px;
-      top: -15px;
-    }
-  }
-
-  .repair {
-    &__list-item {
-      margin-right: 40px;
+      left: -140px;
+      top: 0px;
     }
   }
 

@@ -23,12 +23,13 @@
   justify-content: space-between;
 }
 .menu__list {
-  list-style-type: none;
   display: flex;
   align-items: center;
 }
 .menu__list-item {
   margin-right: 16px;
+  border: none;
+  background-color: #fff;
   cursor: pointer;
 }
 .menu__list-item:last-child {
@@ -43,24 +44,43 @@
 .menu__repair {
   display: flex;
   align-items: center;
-  list-style-type: none;
+}
+.menu__list-item_burger {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/menu/burger.svg");
+}
+.menu__list-item_call {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/menu/call.svg");
+}
+.menu__list-item_chat {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/menu/chat.svg");
+}
+.menu__list-item_profile {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/menu/profile.svg");
 }
 .menu__list-item_burger::after {
   content: "";
   display: none;
-  width: 3px;
+  width: 2px;
   height: 32px;
   flex-shrink: 0;
   border-radius: 1px;
   background: #eaeaea;
   position: relative;
-  left: 20px;
-  top: -3px;
+  left: 40px;
+  top: 0px;
 }
 .menu__list-item_group::after {
   content: "";
   display: inline-block;
-  width: 3px;
+  width: 2px;
   height: 32px;
   flex-shrink: 0;
   border-radius: 1px;
@@ -78,13 +98,25 @@
   border-radius: 1px;
   background: #eaeaea;
   position: relative;
-  left: 20px;
-  top: -3px;
+  left: 40px;
+  top: 0px;
 }
 
 .repair__list-item {
   margin-left: 16px;
+  border: none;
+  background-color: #fff;
   cursor: pointer;
+}
+.repair__list-item_repair {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/menu/repair.svg");
+}
+.repair__list-item_checkstatus {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/menu/checkstatus.svg");
 }
 
 .content__body {
@@ -273,38 +305,41 @@
   .menu__list-item {
     margin-right: 40px;
   }
-  .menu__list-item_repair::before {
-    content: "Оставить заявку";
-    display: inline;
-    color: #1B1C21;
-    text-align: right;
-    font-family: TT Lakes;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    position: relative;
-    left: -20px;
-    top: -15px;
-  }
-  .menu__list-item_checkstatus::before {
-    content: "Статус ремонта";
-    display: inline;
-    color: #1B1C21;
-    text-align: right;
-    font-family: TT Lakes;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    position: relative;
-    left: -20px;
-    top: -15px;
-  }
   .repair__list-item {
     margin-right: 40px;
+    margin-left: 140px;
+  }
+  .repair__list-item_repair::before {
+    content: "Оставить заявку";
+    width: 125px;
+    display: inline-block;
+    color: #1B1C21;
+    text-align: right;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: relative;
+    left: -140px;
+    top: 0px;
+  }
+  .repair__list-item_checkstatus::before {
+    content: "Статус ремонта";
+    width: 125px;
+    display: inline-block;
+    color: #1B1C21;
+    text-align: right;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: relative;
+    left: -140px;
+    top: 0px;
   }
   .content__body {
     margin: 0 auto;
