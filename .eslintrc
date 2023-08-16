@@ -1,18 +1,30 @@
 {
+  "plugins": ["prettier", "unicorn"],
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
   "env": {
     "es6": true
   },
   "rules": {
+
     "no-var": "error",
     "semi": "error", // ;
     "quotes": ["error", "single"], // ''
     "indent": ["error", 2], // отступ
     "no-multi-spaces": "error", // нет лишних отступов
     "space-in-parens": ["error", "never"], // пробелы внутри скобок
+    "no-multiple-empty-lines": ["error", { "max": 1 }], // количество пустых строк
+    "prefer-const": "error", // будет менять let на const
+    "no-use-before-define": "error", // ошибк если fn используется до ее определения
+
     "no-spaced-func": 1, //отвечает за отсутствие пробелов между именем функции и скобками, а также между скобками и параметрами
     "comma-spacing": ["error", { "before": false, "after": true }], //пробелами между параметрами функций
-    "no-multiple-empty-lines": ["error", { "max": 1 }], // количество пустых строк
-    "prefer-const": "error",  // будет менять let на const
-    "no-use-before-define": "error" // ошибк если fn используется до ее определения
+    "no-unused-vars": "error", // проверяет, что объявленные переменные используются в коде.
+    "eqeqeq": ["error", "always"], // требовать использования строгого равенства
+    "no-else-return": "error", // проверку использования ненужных блоков кода после оператора if с оператором return
+    "no-extra-semi": "error", // лишних точек с запятой
+    "prefer-destructuring": ["error", { "object": true, "array": true }], //использовать деструктуризацию {} и []
+    "yoda": "error" // обращать условные выражения в обратном порядке if
   }
 }

@@ -16,7 +16,7 @@
     margin: 0 auto 0;
     min-width: 320px;
     overflow: hidden;
-		min-height: 509px;
+    min-height: 509px;
     background: #f8f8f8;
   }
   &__title {
@@ -40,7 +40,7 @@
     top: 0;
   }
   &__title::before {
-    background: url('../images/highlight.svg') center center no-repeat;
+    background: url("../images/highlight.svg") center center no-repeat;
   }
   &__list {
     // position: relative;
@@ -63,7 +63,7 @@
     display: block;
     width: 50px;
     height: 40px;
-    background-image: linear-gradient(to right,  transparent, #f8f8f8);
+    background-image: linear-gradient(to right, transparent, #f8f8f8);
 
     position: absolute;
     right: 0px;
@@ -77,7 +77,7 @@
     border: 2px solid #b8ffec;
     box-sizing: border-box;
     background: #fff;
-    padding: 6px 7px; 
+    padding: 6px 7px;
   }
   &__text {
     color: #7e7e82;
@@ -89,7 +89,7 @@
     letter-spacing: -0.2px;
   }
   &__description {
-		display: block;
+    display: block;
   }
   &__description-container {
     margin: 0 16px 16px;
@@ -113,7 +113,7 @@
     border: none;
     background-color: #f8f8f8;
     cursor: pointer;
-    color: #1B1C21;
+    color: #1b1c21;
     font-family: TT Lakes;
     font-size: 16px;
     font-style: normal;
@@ -146,7 +146,7 @@
 
 .header {
   &__body {
-    position: absolute; 
+    position: absolute;
     top: 0;
     right: 0;
     width: 100%;
@@ -174,12 +174,12 @@
   &__list-item_repair {
     width: 40px;
     height: 40px;
-    background-image: url('../images/header/repair.svg');
+    background-image: url("../images/header/repair.svg");
   }
   &__list-item_checkstatus {
     width: 40px;
     height: 40px;
-    background-image: url('../images/header/checkstatus.svg');
+    background-image: url("../images/header/checkstatus.svg");
   }
   &__list-item:last-child {
     margin-right: 0;
@@ -197,22 +197,22 @@
   &__list-item_burger {
     width: 40px;
     height: 40px;
-    background-image: url('../images/header/burger.svg');
+    background-image: url("../images/header/burger.svg");
   }
   &__list-item_call {
     width: 40px;
     height: 40px;
-    background-image: url('../images/header/call.svg');
+    background-image: url("../images/header/call.svg");
   }
   &__list-item_chat {
     width: 40px;
     height: 40px;
-    background-image: url('../images/header/chat.svg');
+    background-image: url("../images/header/chat.svg");
   }
   &__list-item_profile {
     width: 40px;
     height: 40px;
-    background-image: url('../images/header/profile.svg');
+    background-image: url("../images/header/profile.svg");
   }
   &__list-item_burger::after {
     content: "";
@@ -238,7 +238,7 @@
     left: 16px;
     top: -7px;
   }
-	&__list-item_profile::after {
+  &__list-item_profile::after {
     content: "";
     display: inline-block;
     width: 2px;
@@ -251,6 +251,5 @@
     top: 0px;
   }
 }
-
 
 @import "media";

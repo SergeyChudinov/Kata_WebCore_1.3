@@ -111,7 +111,7 @@
   border: none;
   background-color: #f8f8f8;
   cursor: pointer;
-  color: #1B1C21;
+  color: #1b1c21;
   font-family: TT Lakes;
   font-size: 16px;
   font-style: normal;
@@ -366,7 +366,7 @@
     content: "Оставить заявку";
     width: 125px;
     display: inline-block;
-    color: #1B1C21;
+    color: #1b1c21;
     text-align: right;
     font-family: TT Lakes;
     font-size: 16px;
@@ -382,7 +382,7 @@
     content: "Статус ремонта";
     width: 125px;
     display: inline-block;
-    color: #1B1C21;
+    color: #1b1c21;
     text-align: right;
     font-family: TT Lakes;
     font-size: 16px;
@@ -398,7 +398,7 @@
     content: "Оставить заявку";
     width: 125px;
     display: inline-block;
-    color: #1B1C21;
+    color: #1b1c21;
     text-align: right;
     font-family: TT Lakes;
     font-size: 16px;
@@ -414,7 +414,7 @@
     content: "Статус ремонта";
     width: 125px;
     display: inline-block;
-    color: #1B1C21;
+    color: #1b1c21;
     text-align: right;
     font-family: TT Lakes;
     font-size: 16px;
@@ -426,4 +426,4 @@
     left: -140px;
     top: 0px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
