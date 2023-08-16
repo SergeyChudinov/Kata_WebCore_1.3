@@ -1,12 +1,11 @@
 @media screen and (min-width: 768px) {
-
   .content {
-		&__body {
+    &__body {
       margin: 0 auto;
       min-width: 768px;
       overflow: hidden;
-			min-height: 416px;
-		}
+      min-height: 416px;
+    }
     &__title {
       padding: 24px 24px 32px;
     }
@@ -19,11 +18,11 @@
 
     &__description {
       display: flex;
-			justify-content: space-between;
+      justify-content: space-between;
     }
-		&__container {
-			width: 50%;
-		}
+    &__container {
+      width: 50%;
+    }
     &__description-container {
       margin: 18px 48px 16px 24px;
       height: 140px;
@@ -35,11 +34,11 @@
     }
 
     &__description-images {
-			width: 50%;
+      width: 50%;
     }
     &__images {
-   	 	margin: 27px 15px;
-			width: 100%;
+      margin: 27px 15px;
+      width: 100%;
     }
   }
 
@@ -51,7 +50,7 @@
     &__list-item_burger {
       margin-right: 42px;
     }
-		&__list-item:nth-child(3) {
+    &__list-item:nth-child(3) {
       margin-right: 42px;
     }
     &__list-item_burger::after {
@@ -70,13 +69,12 @@
 }
 
 @media screen and (min-width: 1120px) {
-
   .content {
-		&__body {
+    &__body {
       margin: 0 auto;
       width: 1120px;
       padding-top: 0; //
-		}
+    }
     &__header {
       display: flex;
       justify-content: space-between;
@@ -85,7 +83,7 @@
       padding: 24px 24px 32px;
       position: relative;
       z-index: 1000;
-    }        
+    }
     &__repair {
       display: flex;
       align-items: center;
@@ -126,27 +124,11 @@
       list-style-type: none;
       margin-right: 16px;
     }
-        &__list-item_repair::before {
+    &__list-item_repair::before {
       content: "Оставить заявку";
       width: 125px;
       display: inline-block;
-      color: #1B1C21;
-      text-align: right;
-      font-family: TT Lakes;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 24px; 
-      letter-spacing: -0.2px;
-      position: relative;
-      left: -140px;
-      top: 0px;
-    }
-    &__list-item_checkstatus::before {
-      content: "Статус ремонта";
-      width: 125px;
-      display: inline-block;
-      color: #1B1C21;
+      color: #1b1c21;
       text-align: right;
       font-family: TT Lakes;
       font-size: 16px;
@@ -157,18 +139,34 @@
       position: relative;
       left: -140px;
       top: 0px;
-    }    
-    &__list-item_repair::before {
-      content: "Оставить заявку";
+    }
+    &__list-item_checkstatus::before {
+      content: "Статус ремонта";
       width: 125px;
       display: inline-block;
-      color: #1B1C21;
+      color: #1b1c21;
       text-align: right;
       font-family: TT Lakes;
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      line-height: 24px; 
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      position: relative;
+      left: -140px;
+      top: 0px;
+    }
+    &__list-item_repair::before {
+      content: "Оставить заявку";
+      width: 125px;
+      display: inline-block;
+      color: #1b1c21;
+      text-align: right;
+      font-family: TT Lakes;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
       letter-spacing: -0.2px;
       position: relative;
       left: -140px;
@@ -178,7 +176,7 @@
       content: "Статус ремонта";
       width: 125px;
       display: inline-block;
-      color: #1B1C21;
+      color: #1b1c21;
       text-align: right;
       font-family: TT Lakes;
       font-size: 16px;

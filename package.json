@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint",
+    "prettier": "prettier ./ --ext .js --ext .ts --write",
     "lint": "eslint ./ --ext .js --ext .ts",
     "lint-fix": "eslint ./ --ext .js --ext .ts --fix"
   },
@@ -13,6 +14,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.47.0"
+    "eslint": "^8.47.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "prettier": "3.0.2"
   }
 }
