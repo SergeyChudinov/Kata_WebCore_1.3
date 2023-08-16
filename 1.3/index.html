@@ -9,42 +9,36 @@
 </head>
 
 <body>
-	<header>
-		<nav class="menu">
-			<div class="menu__body">
-				<div class="menu__container">
-					<div class="menu__list">
-						<button class="menu__list-item menu__list-item_burger"></button>
-						<button class="menu__list-item menu__list-item_group"><img src="images/menu/Group.svg" alt="group"></button>
-					</div>
-					<div class="menu__right">
-						<div class="menu__list">
-							<button class="menu__list-item menu__list-item_hidden menu__list-item_call"></button>
-							<button class="menu__list-item menu__list-item_hidden menu__list-item_chat"></button>
-							<button class="menu__list-item menu__list-item_hidden menu__list-item_profile"></button>
-						</div>
-						<div class="repair menu__repair">
-							<button class="repair__list-item repair__list-item_repair"></button>
-							<button class="repair__list-item repair__list-item_checkstatus"></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
-
 	<main>
 		<section class="content">
 			<div class="content__body">
 				<div class="content__header">
 					<h1 class="content__title">Услуги и сервисы</h1>
-					<div class="repair content__repair">
-						<button class="repair__list-item repair__list-item_repair"></button>
-						<button class="repair__list-item repair__list-item_checkstatus"></button>
-					</div>
+					<nav class="header">
+						<div class="header__body">
+							<div class="header__container">
+								<div class="header__list header__list_display_none">
+									<button class="header__list-item header__list-item_burger"></button>
+									<button class="header__list-item header__list-item_group"><img src="images/header/Group.svg"
+											alt="group"></button>
+								</div>
+								<div class="header__right">
+									<div class="header__list header__list_display_none">
+										<button class="header__list-item header__list-item_hidden header__list-item_call"></button>
+										<button class="header__list-item header__list-item_hidden header__list-item_chat"></button>
+										<button class="header__list-item header__list-item_hidden header__list-item_profile"></button>
+									</div>
+									<div class="header__repair">
+										<button class="header__list-item header__list-item_repair"></button>
+										<button class="header__list-item header__list-item_checkstatus"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
 				</div>
 				<nav>
-					<ul class="content__list clearfix">
+					<ul class="content__list">
 						<li class="content__list-item">
 							<a class="content__text">Ремонтируемые бренды</a>
 						</li>
@@ -55,12 +49,12 @@
 							<a class="content__text">Цены на услуги</a>
 						</li>
 						<li class="content__list-item">
-							<address class="content__text">Адреса сервисных центров</address>
+							<a class="content__text">Адреса сервисных центров</a>
 						</li>
 						<li class="content__list-item">
 							<a class="content__text">Специальные цены</a>
 						</li>
-						<li class="content__list-item">
+						<li class="content__list-item content__list-item_blur">
 							<a class="content__text">Отзывы</a>
 						</li>
 					</ul>
