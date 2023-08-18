@@ -16,7 +16,7 @@
   width: 320px;
   padding: 18px 24px 32px;
   box-sizing: border-box;
-  background: #FFF;
+  background: #fff;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 .menu__container {
@@ -65,6 +65,7 @@
   list-style-type: none;
 }
 .menu__catalog-item {
+  position: relative;
   padding-bottom: 32px;
   cursor: pointer;
 }
@@ -72,25 +73,55 @@
   opacity: 0.7;
   font-size: 18px;
 }
+.menu__catalog-item::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 32px;
+  position: absolute;
+  left: -24px;
+  top: -5px;
+  border-radius: 0 4px 4px 0;
+}
+.menu__catalog-item:hover::before {
+  background: url("../images/highlight.svg") center center no-repeat;
+}
 .menu__text {
   opacity: 1;
   transition: opacity 300ms;
   transition: font-size 300ms;
   color: #1B1C21;
-  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.menu__mail {
+  color: #1B1C21;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: -0.2px;
+  margin-top: 16px;
+  margin-bottom: 12px;
 }
-.menu__nutton {
+.menu__phone {
+  color: #1B1C21;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+.menu__button {
   width: 24px;
   height: 24px;
   margin-right: 7px;
   background-color: #fff;
   color: #1B1C21;
-  font-family: TT Lakes;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -101,7 +132,31 @@
   opacity: 1;
   transition: opacity 300ms;
 }
-.menu__nutton:hover {
+.menu__button:hover {
   opacity: 0.7;
   transform: scale(1.1);
+}
+
+.menu-items__list-item {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.menu-items__list-item:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+.menu-items__list-item_call {
+  background-image: url("../images/call.svg");
+}
+.menu-items__list-item_chat {
+  background-image: url("../images/chat.svg");
+}
+.menu-items__list-item_profile {
+  background-image: url("../images/profile.svg");
 }/*# sourceMappingURL=menu.css.map */
