@@ -1,0 +1,25 @@
+.menu-items {
+	&__list-item {
+		width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border: none;
+    background-color: $header-bc;
+    cursor: pointer;
+		opacity: 1;
+		transition: opacity 300ms;
+	}
+	&__list-item:hover {
+		opacity: 0.7;
+		transform: scale(1.05);
+	}
+	&__list-item_call {
+		background-image: url("../images/call.svg");
+	}
+	&__list-item_chat {
+		background-image: url("../images/chat.svg");
+	}
+	&__list-item_profile {
+		background-image: url("../images/profile.svg");
+	}
+}

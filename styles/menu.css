@@ -47,7 +47,7 @@
   transform: scale(1.05);
 }
 .menu__list-item_cross {
-  background-image: url("../images/burger.svg");
+  background-image: url("../images/cross.svg");
 }
 .menu__list-item_group {
   width: 97px;

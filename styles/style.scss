@@ -114,7 +114,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: -0.2px;
   }
   &__button-images {
@@ -226,31 +226,7 @@
   }
 }
 
-.menu-items {
-	&__list-item {
-		width: 40px;
-    height: 40px;
-    margin-right: 16px;
-    border: none;
-    background-color: $header-bc;
-    cursor: pointer;
-		opacity: 1;
-		transition: opacity 300ms;
-	}
-	&__list-item:hover {
-		opacity: 0.7;
-		transform: scale(1.05);
-	}
-	&__list-item_call {
-		background-image: url("../images/call.svg");
-	}
-	&__list-item_chat {
-		background-image: url("../images/chat.svg");
-	}
-	&__list-item_profile {
-		background-image: url("../images/profile.svg");
-	}
-}
+@import "_menu-items";
 
 
 @import "media";
