@@ -1,0 +1,225 @@
+@import 'TT_Lakes.css';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "TT Lakes", serif;
+}
+
+.html {
+  font-size: 14px;
+}
+
+.brands__body {
+  margin: 0 auto 0;
+  min-width: 320px;
+  overflow: hidden;
+  min-height: 234px;
+  background: #f8f8f8;
+}
+.brands__title {
+  height: 24px;
+  padding: 16px;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #F8F8F8 0%, #FFF 100%);
+}
+.brands__slider {
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 24px;
+}
+.brands__input {
+  display: none;
+}
+.brands__controls {
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+.brands__label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dddddd;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.brands #btn-1:checked ~ .brands__controls label[for=btn-1],
+.brands #btn-2:checked ~ .brands__controls label[for=btn-2],
+.brands #btn-3:checked ~ .brands__controls label[for=btn-3],
+.brands #btn-4:checked ~ .brands__controls label[for=btn-4],
+.brands #btn-5:checked ~ .brands__controls label[for=btn-5],
+.brands #btn-6:checked ~ .brands__controls label[for=btn-6],
+.brands #btn-7:checked ~ .brands__controls label[for=btn-7],
+.brands #btn-8:checked ~ .brands__controls label[for=btn-8],
+.brands #btn-9:checked ~ .brands__controls label[for=btn-9],
+.brands #btn-10:checked ~ .brands__controls label[for=btn-10],
+.brands #btn-11:checked ~ .brands__controls label[for=btn-311] {
+  background-color: #b5b6bc;
+}
+.brands #btn-1:checked ~ .brands__items .brands__item {
+  transform: translate(0);
+}
+.brands #btn-2:checked ~ .brands__items .brands__item {
+  transform: translate(-240px);
+}
+.brands #btn-3:checked ~ .brands__items .brands__item {
+  transform: translate(-480px);
+}
+.brands #btn-4:checked ~ .brands__items .brands__item {
+  transform: translate(-720px);
+}
+.brands #btn-5:checked ~ .brands__items .brands__item {
+  transform: translate(-960px);
+}
+.brands #btn-6:checked ~ .brands__items .brands__item {
+  transform: translate(-1200px);
+}
+.brands #btn-7:checked ~ .brands__items .brands__item {
+  transform: translate(-1440px);
+}
+.brands #btn-8:checked ~ .brands__items .brands__item {
+  transform: translate(-1680px);
+}
+.brands #btn-9:checked ~ .brands__items .brands__item {
+  transform: translate(-1920px);
+}
+.brands #btn-10:checked ~ .brands__items .brands__item {
+  transform: translate(-2160px);
+}
+.brands #btn-11:checked ~ .brands__items .brands__item {
+  transform: translate(-2400px);
+}
+.brands__items {
+  display: flex;
+  padding: 0 16px 32px 16px;
+}
+.brands__item {
+  width: 224px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  box-sizing: border-box;
+  margin-right: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.brands__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 224px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  box-sizing: border-box;
+  margin-right: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 16px;
+  transition: opacity 300ms;
+}
+.brands__item:hover .brands__container {
+  transform: scale(1.05);
+  padding: 16px 20px;
+}
+.brands__circle {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ec709f;
+  border-radius: 50%;
+  transition: opacity 300ms;
+}
+.brands__arrow {
+  margin-left: 11px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #ec709f;
+  border-bottom: 2px solid #ec709f;
+  transform: rotate(-45deg);
+}
+.brands__button {
+  display: none;
+}
+
+.brands-button {
+  margin: 0 24px 34px;
+  height: 24px;
+  border: none;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.brands-button__images {
+  margin-right: 8px;
+}
+.brands-button__text {
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+@media screen and (min-width: 768px) {
+  .brands__body {
+    margin: 0 auto;
+    min-width: 768px;
+    min-height: 322px;
+  }
+  .brands__title {
+    padding: 16px 24px;
+  }
+  .brands__controls {
+    display: none;
+  }
+  .brands__items {
+    padding: 24px 24px 16px 24px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .brands__item {
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+  .brands__button {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .brands__body {
+    margin: 0 auto;
+    width: 1120px;
+  }
+  .brands__title {
+    padding: 16px 32px;
+  }
+  .brands__items {
+    padding: 24px 32px 16px 32px;
+  }
+  .brands__item {
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+}/*# sourceMappingURL=brends.css.map */

@@ -89,7 +89,7 @@
 }
 .content__description-container {
   margin: 0 16px 16px;
-  height: 90px;
+  height: 140px;
   overflow: hidden;
 }
 .content__description-text {
@@ -101,30 +101,8 @@
   letter-spacing: 0.2px;
 }
 .content__button {
-  margin: 0 24px 0;
-  height: 24px;
   display: flex;
   align-items: center;
-  border: none;
-  background-color: #f8f8f8;
-  cursor: pointer;
-  color: #1b1c21;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: -0.2px;
-}
-.content__button-images {
-  margin-right: 8px;
-}
-.content____button-text {
-  color: #1b1c21;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
 }
 .content__description-images {
   display: flex;
@@ -221,6 +199,31 @@
   top: 0px;
 }
 
+.brands-button {
+  margin: 0 24px 34px;
+  height: 24px;
+  border: none;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.brands-button__images {
+  margin-right: 8px;
+}
+.brands-button__text {
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
 .menu-items__list-item {
   width: 40px;
   height: 40px;
@@ -272,9 +275,6 @@
     margin: 18px 48px 16px 24px;
     height: 140px;
     overflow: hidden;
-  }
-  .content__button {
-    margin: 0 24px 16px;
   }
   .content__description-images {
     width: 50%;
@@ -332,11 +332,6 @@
     position: relative;
     z-index: 1000;
   }
-  .content__repair {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-  }
   .content__list {
     overflow: hidden;
     justify-content: flex-start;
@@ -365,12 +360,6 @@
   .header__list-item {
     margin-right: 16px;
     margin-left: 140px;
-  }
-  .header__repair {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin-right: 16px;
   }
   .header__list-item_repair::before {
     content: "Оставить заявку";

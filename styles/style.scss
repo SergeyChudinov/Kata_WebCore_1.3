@@ -91,7 +91,7 @@
   }
   &__description-container {
     margin: 0 16px 16px;
-    height: 90px;
+    height: 140px;
     overflow: hidden;
   }
   &__description-text {
@@ -103,30 +103,8 @@
     letter-spacing: 0.2px;
   }
   &__button {
-    margin: 0 24px 0;
-    height: 24px;
     display: flex;
     align-items: center;
-    border: none;
-    background-color: $body-bc;
-    cursor: pointer;
-    color: #1b1c21;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-  }
-  &__button-images {
-    margin-right: 8px;
-  }
-  &____button-text {
-    color: #1b1c21;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
   }
   &__description-images {
     display: flex;
@@ -226,7 +204,6 @@
   }
 }
 
-@import "_menu-items";
-
-
+@import "brands-button";
+@import "menu-items";
 @import "media";
