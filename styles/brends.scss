@@ -1,0 +1,167 @@
+@import 'TT_Lakes.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Lakes', serif;
+}
+.html {
+  font-size: 14px;
+}
+
+@import 'vars';
+
+.brands {
+  &__body {
+    margin: 0 auto 0;
+    min-width: 320px;
+    overflow: hidden;
+    min-height: 234px;
+    background: $body-bc;
+  }
+  &__title {
+		height: 24px;
+    padding: 16px;
+    color: $brands-title-c;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+		background: linear-gradient(to right, #F8F8F8 0%, #FFF 100%);
+  }
+  &__slider {
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 24px;
+  }
+	&__input {
+    display: none;
+  }
+  &__controls {
+    margin-bottom: 10px;
+    text-align: center;
+		position: relative;
+		top: 120px;
+  }
+  &__label {
+    display: inline-block;
+    margin: 0 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $brands-label-bc;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  #btn-1:checked ~ .brands__controls label[for='btn-1'],
+  #btn-2:checked ~ .brands__controls label[for='btn-2'],
+  #btn-3:checked ~ .brands__controls label[for='btn-3'],
+  #btn-4:checked ~ .brands__controls label[for='btn-4'],
+  #btn-5:checked ~ .brands__controls label[for='btn-5'],
+  #btn-6:checked ~ .brands__controls label[for='btn-6'],
+  #btn-7:checked ~ .brands__controls label[for='btn-7'],
+  #btn-8:checked ~ .brands__controls label[for='btn-8'],
+  #btn-9:checked ~ .brands__controls label[for='btn-9'],
+  #btn-10:checked ~ .brands__controls label[for='btn-10'],
+  #btn-11:checked ~ .brands__controls label[for='btn-311'] {
+    background-color: $brands-label-bc-checked;
+  }
+  #btn-1:checked ~ .brands__items .brands__item {
+    transform: translate(0);
+  }
+  #btn-2:checked ~ .brands__items .brands__item {
+    transform: translate(-240px);
+  }
+  #btn-3:checked ~ .brands__items .brands__item {
+    transform: translate(-480px);
+  }
+	#btn-4:checked ~ .brands__items .brands__item {
+    transform: translate(-720px);
+  }
+	#btn-5:checked ~ .brands__items .brands__item {
+    transform: translate(-960px);
+  }
+	#btn-6:checked ~ .brands__items .brands__item {
+    transform: translate(-1200px);
+  }
+	#btn-7:checked ~ .brands__items .brands__item {
+    transform: translate(-1440px);
+  }
+	#btn-8:checked ~ .brands__items .brands__item {
+    transform: translate(-1680px);
+  }
+	#btn-9:checked ~ .brands__items .brands__item {
+    transform: translate(-1920px);
+  }
+	#btn-10:checked ~ .brands__items .brands__item {
+    transform: translate(-2160px);
+  }
+	#btn-11:checked ~ .brands__items .brands__item {
+    transform: translate(-2400px);
+  }
+  &__items {
+    display: flex;
+    padding: 0 16px 32px 16px;
+  }
+
+  &__item {
+    width: 224px;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid $brands-item-br;
+    background: #fff;
+    box-sizing: border-box;
+    margin-right: 16px;
+    flex-shrink: 0;   ///
+		cursor: pointer;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 224px;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid $brands-item-br;
+    background: #fff;
+    box-sizing: border-box;
+    margin-right: 16px;
+    flex-shrink: 0;   ///
+		cursor: pointer;
+    padding: 16px;
+    transition: opacity 300ms;
+  }
+	&__item:hover .brands__container{
+		transform: scale(1.05);
+    padding: 16px 20px;
+	}
+  &__img {
+  }
+  &__circle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $brands-icon-c;
+    border-radius: 50%;
+		transition: opacity 300ms;
+  }
+  &__arrow {
+    margin-left: 11px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid $brands-icon-c;
+    border-bottom: 2px solid $brands-icon-c;
+    transform: rotate(-45deg);
+  }
+  &__button {
+    display: none;
+  }
+}
+
+@import "brands-button";
+@import "media-brands";
