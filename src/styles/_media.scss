@@ -173,11 +173,12 @@
     }
     .menu {
       display: block;
-      position: absolute;
-      z-index: 10;
-      top: 0;
-      left: 0px;
-      height: 100%;
+      &__list-item_cross {
+        display: none;
+      }
+      &__list-item_group {
+        margin-left: 0;
+      }
     }
   }
 
