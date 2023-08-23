@@ -20,7 +20,7 @@
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
     text-transform: uppercase;
-		background: linear-gradient(to right, #F8F8F8 0%, #FFF 100%);
+		background: linear-gradient(to right, $body-bc 0%, $header-bc 100%);
     margin-bottom: 16px;
   }
   &__swiper {
@@ -36,7 +36,7 @@
     height: 72px;
     border-radius: 6px;
     border: 1px solid $brands-item-br;
-    background: #fff;
+    background: $header-bc;
     box-sizing: border-box;
     flex-shrink: 0;
     cursor: pointer;
@@ -71,12 +71,12 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #dddddd;
+    background-color: $brands-label-bc;
     cursor: pointer;
     transition: background-color 0.2s;
   }
   .swiper-pagination-bullet-active {
-    background-color: #b5b6bc;
+    background-color: $brands-label-bc-checked;
   }
   .image-slider .swiper-slide {
     width: auto;

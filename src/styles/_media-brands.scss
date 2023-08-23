@@ -1,9 +1,9 @@
-@import "vars";
-
 @media screen and (max-width: 767px) {
-	.swiper-slide {
-    width: 224px;
-  }
+	.brands {
+		&__slide {
+			width: 224px;
+		}
+	}
 }
 
 @media screen and (min-width: 767px) {
@@ -12,10 +12,10 @@
 			display: flex;
 			flex-wrap: wrap;
 		}
-		.swiper-wrapper {
+		&__wrapper {
 			margin-bottom: 0;
 		}
-		.swiper-pagination {
+		&__pagination {
 			display: none;
 		}
 	}
@@ -34,11 +34,11 @@
 		&__container {
 			padding: 24px 12px;
 		}
-		.swiper-slide {
+		&__slide {
 			flex-basis: calc(33.33% - 24px);
-  		margin: 12px !important;
+  		margin: 12px ;
 		}
-		&:not(.show-more) .swiper-slide:nth-child(n + 7) {
+		&:not(.show-more) .brands__slide:nth-child(n + 7) {
 			display: none;
 		}
 		&__button {
@@ -60,11 +60,11 @@
 		&__container {
 			padding: 32px 16px;
 		}
-		.swiper-slide {
+		&__slide {
 			flex-basis: calc(25% - 32px);
   		margin: 16px;
 		}
-		&:not(.show-more) .swiper-slide:nth-child(n + 9) {
+		&:not(.show-more) .brands__slide:nth-child(n + 9) {
 			display: none;
 		}
 		&__button {

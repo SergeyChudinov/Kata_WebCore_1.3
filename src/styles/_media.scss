@@ -152,12 +152,11 @@
       top: 0px;
     }
   }
-
+  .menu {
+    display: none;
+  }
 
 }
-
-
-  
 
 @media screen and (min-width: 1440px) {
   .content {
@@ -181,5 +180,4 @@
       }
     }
   }
-
 }
