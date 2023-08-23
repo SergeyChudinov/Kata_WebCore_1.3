@@ -1,15 +1,12 @@
-
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "TT Lakes", serif;
-}
-
 @import "vars";
 
 .menu {
-	height: 1024px;
+	display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+	height: 100%;
 	&__body {
 		margin: 0 auto;
 		min-height: 100%;
@@ -145,7 +142,7 @@
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 500;
-		line-height: 24px; /* 150% */
+		line-height: 24px;
 		letter-spacing: -0.2px;
 		border: none;
 		cursor: pointer;
@@ -161,4 +158,5 @@
 	}
 }
  
-@import "_menu-items";
+@import "menu-items";
+

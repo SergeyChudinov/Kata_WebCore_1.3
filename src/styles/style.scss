@@ -1,15 +1,16 @@
 @import "TT_Lakes.css";
+@import "vars";
 
 * {
   margin: 0;
   padding: 0;
   font-family: "TT Lakes", serif;
 }
-.html {
-  font-size: 14px;
-}
 
-@import "vars";
+body {
+  background-color: #fcf9f9;
+
+}
 
 .content {
   &__body {
@@ -20,6 +21,7 @@
     overflow: hidden;
     min-height: 509px;
     background: $body-bc;
+    box-sizing: border-box;
   }
   &__title {
     display: flex;
@@ -91,8 +93,8 @@
   }
   &__description-container {
     margin: 0 16px 16px;
-    height: 140px;
-    overflow: hidden;
+    // height: 140px;
+    // overflow: hidden;
   }
   &__description-text {
     color: #1b1c21;
@@ -102,6 +104,9 @@
     line-height: 20px;
     letter-spacing: 0.2px;
     margin-bottom: 16px;
+  }
+  &__description-text_display_none {
+    display: none;
   }
   &__button {
     display: flex;
@@ -208,6 +213,9 @@
   }
 }
 
+
+@import "menu";
+@import "brands";
 @import "brands-button";
 @import "menu-items";
 @import "media";
