@@ -1,6 +1,27 @@
 @import "vars";
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+	.swiper-slide {
+    width: 224px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+	.brands {
+		&__wrapper {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.swiper-wrapper {
+			margin-bottom: 0;
+		}
+		.swiper-pagination {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 767px) and (max-width: 1119px) {
 	.brands {
 		&__body {
 			margin: 0 auto;
@@ -10,35 +31,24 @@
 		&__title {
 			padding: 16px 24px;
 		}
-		&__slider {
-
+		&__container {
+			padding: 24px 12px;
 		}
-		&__controls {
+		.swiper-slide {
+			flex-basis: calc(33.33% - 24px);
+  		margin: 12px !important;
+		}
+		&:not(.show-more) .swiper-slide:nth-child(n + 7) {
 			display: none;
 		}
-		&__items {
-			// width: 100%;
-			// display: grid;
-			// grid-template-columns: repeat(auto-fit, 224px);
-			// grid-auto-flow: column;
-
-			padding: 24px 24px 16px 24px;
-
-			width: 100%;
-			display: flex;
-			flex-wrap: wrap;
-		}
-		&__item {
-			margin-right: 24px;
-			margin-bottom: 16px;
-		}
 		&__button {
+			margin-left: 24px;
 			display: flex;
 		}
 	}
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1119px) {
   .brands {
 		&__body {
 			margin: 0 auto;
@@ -47,12 +57,19 @@
 		&__title {
 			padding: 16px 32px;
 		}
-		&__items {
-			padding: 24px 32px 16px 32px;
+		&__container {
+			padding: 32px 16px;
 		}
-		&__item {
-			margin-right: 32px;
-			margin-bottom: 16px;
+		.swiper-slide {
+			flex-basis: calc(25% - 32px);
+  		margin: 16px;
+		}
+		&:not(.show-more) .swiper-slide:nth-child(n + 9) {
+			display: none;
+		}
+		&__button {
+			margin-left: 32px;
+			display: flex;
 		}
   }
 }
