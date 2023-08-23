@@ -47,7 +47,8 @@
   transform: scale(1.05);
 }
 .menu__list-item_cross {
-  background-image: url("../images/cross.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/cross.svg") no-repeat center;
 }
 .menu__list-item_group {
   width: 97px;
@@ -59,7 +60,8 @@
   padding-right: 78px;
 }
 .menu__list-item_search {
-  background-image: url("../images/search.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/search.svg") no-repeat center;
 }
 .menu__catalog {
   list-style-type: none;
@@ -97,26 +99,38 @@
   line-height: 24px;
   letter-spacing: -0.2px;
 }
-.menu__mail {
+.menu__footer a {
+  text-decoration: none;
+  display: block;
   color: #1B1C21;
-  font-size: 16px;
   font-style: normal;
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.menu__mail {
+  font-size: 16px;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.2px;
   margin-top: 16px;
   margin-bottom: 12px;
 }
 .menu__phone {
-  color: #1B1C21;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
   letter-spacing: -0.6px;
   margin-bottom: 40px;
 }
-.menu__button {
+.menu__mail:hover, .menu__phone:hover {
+  opacity: 0.7;
+  transform: scale(1.01);
+}
+.menu__footer input {
+  display: none;
+}
+.menu__footer label {
+  display: inline-block;
   width: 24px;
   height: 24px;
   margin-right: 7px;
@@ -132,9 +146,12 @@
   opacity: 1;
   transition: opacity 300ms;
 }
-.menu__button:hover {
+.menu__footer label:hover {
   opacity: 0.7;
   transform: scale(1.1);
+}
+.menu__footer input:checked + label {
+  opacity: 0.7;
 }
 
 .menu-items__list-item {
@@ -152,11 +169,14 @@
   transform: scale(1.05);
 }
 .menu-items__list-item_call {
-  background-image: url("../images/call.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/call.svg") no-repeat center;
 }
 .menu-items__list-item_chat {
-  background-image: url("../images/chat.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/chat.svg") no-repeat center;
 }
 .menu-items__list-item_profile {
-  background-image: url("../images/profile.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/profile.svg") no-repeat center;
 }/*# sourceMappingURL=menu.css.map */

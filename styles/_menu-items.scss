@@ -14,12 +14,15 @@
 		transform: scale(1.05);
 	}
 	&__list-item_call {
-		background-image: url("../images/call.svg");
+		border-radius: 50%;
+    background: $circle-bc url("../images/call.svg")  no-repeat center;
 	}
 	&__list-item_chat {
-		background-image: url("../images/chat.svg");
+		border-radius: 50%;
+    background: $circle-bc url("../images/chat.svg")  no-repeat center;
 	}
 	&__list-item_profile {
-		background-image: url("../images/profile.svg");
+		border-radius: 50%;
+    background: $circle-bc url("../images/profile.svg")  no-repeat center;
 	}
 }

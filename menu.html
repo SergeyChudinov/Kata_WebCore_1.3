@@ -20,32 +20,34 @@
               <button class="menu__list-item menu__list-item_search"></button>
             </div>
           </div>
-          <ul class="menu__catalog">
-            <li class="menu__catalog-item">
-              <a class="menu__text">Ремонт техники</a>
-            </li>
-            <li class="menu__catalog-item">
-              <a class="menu__text">Услуги и сервисы</a>
-            </li>
-            <li class="menu__catalog-item">
-              <a class="menu__text">Корпоративным клиентам</a>
-            </li>
-            <li class="menu__catalog-item">
-              <a class="menu__text">Продавцам техники</a>
-            </li>
-            <li class="menu__catalog-item">
-              <a class="menu__text">Партнерам</a>
-            </li>
-            <li class="menu__catalog-item">
-              <a class="menu__text">Производителям</a>
-            </li>
-            <li class="menu__catalog-item">
-              <a class="menu__text">Наши сервисные центры</a>
-            </li>
-            <li class="menu__catalog-item">
-              <a class="menu__text">Контакты</a>
-            </li>
-          </ul>
+          <nav>
+            <ul class="menu__catalog">
+              <li class="menu__catalog-item">
+                <a class="menu__text">Ремонт техники</a>
+              </li>
+              <li class="menu__catalog-item">
+                <a class="menu__text">Услуги и сервисы</a>
+              </li>
+              <li class="menu__catalog-item">
+                <a class="menu__text">Корпоративным клиентам</a>
+              </li>
+              <li class="menu__catalog-item">
+                <a class="menu__text">Продавцам техники</a>
+              </li>
+              <li class="menu__catalog-item">
+                <a class="menu__text">Партнерам</a>
+              </li>
+              <li class="menu__catalog-item">
+                <a class="menu__text">Производителям</a>
+              </li>
+              <li class="menu__catalog-item">
+                <a class="menu__text">Наши сервисные центры</a>
+              </li>
+              <li class="menu__catalog-item">
+                <a class="menu__text">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <div class="menu__footer">
@@ -54,11 +56,16 @@
             <button class="menu-items__list-item menu-items__list-item_chat"></button>
             <button class="menu-items__list-item menu-items__list-item_profile"></button>
           </div>
-          <p class="menu__mail">mail@cps.com</p>
-          <p class="menu__phone">8 800 890 8900</p>
-          <button class="menu__button">RU</button>
-          <button class="menu__button">EN</button>
-          <button class="menu__button">CH</button>
+          <a class="menu__mail" href="#">mail@cps.com</a>
+          <a class="menu__phone" href="#">8 800 890 8900</a>
+
+          <input type="radio" name="lang" id="ru" checked>
+          <label for="ru">RU</label>
+          <input type="radio" name="lang" id="en">
+          <label for="en">EN</label>
+          <input type="radio" name="lang" id="ch">
+          <label for="ch">CH</label>
+
         </div>
       </div>
     </section>

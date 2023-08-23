@@ -99,6 +99,7 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
+  margin-bottom: 16px;
 }
 .content__button {
   display: flex;
@@ -159,7 +160,8 @@
   transform: scale(1.05);
 }
 .header__list-item_burger {
-  background-image: url("../images/burger.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/burger.svg") no-repeat center;
 }
 .header__list-item_group {
   border: none;
@@ -169,10 +171,12 @@
   height: 51px;
 }
 .header__list-item_repair {
-  background-image: url("../images/repair.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/repair.svg") no-repeat center;
 }
 .header__list-item_checkstatus {
-  background-image: url("../images/checkstatus.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/checkstatus.svg") no-repeat center;
 }
 .header__list-item_burger::after {
   content: "";
@@ -239,13 +243,16 @@
   transform: scale(1.05);
 }
 .menu-items__list-item_call {
-  background-image: url("../images/call.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/call.svg") no-repeat center;
 }
 .menu-items__list-item_chat {
-  background-image: url("../images/chat.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/chat.svg") no-repeat center;
 }
 .menu-items__list-item_profile {
-  background-image: url("../images/profile.svg");
+  border-radius: 50%;
+  background: #FF3E79 url("../images/profile.svg") no-repeat center;
 }
 
 @media screen and (min-width: 768px) {
