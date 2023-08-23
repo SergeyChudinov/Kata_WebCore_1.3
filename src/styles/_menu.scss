@@ -132,6 +132,9 @@
 	&__footer input {
 		display: none;
 	}
+	fieldset {
+		border: none;
+	}
 	&__footer label {
 		display: inline-block;
 		width: 24px;

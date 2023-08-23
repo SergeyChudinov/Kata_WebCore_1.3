@@ -19,8 +19,5 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-unicorn": "^48.0.1",
     "prettier": "3.0.2"
-  },
-  "dependencies": {
-    "swiper": "^10.2.0"
   }
 }

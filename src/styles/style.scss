@@ -18,10 +18,13 @@ body {
     padding-top: 88px;
     margin: 0 auto 0;
     min-width: 320px;
-    overflow: hidden;
+    // overflow: hidden;
     min-height: 509px;
     background: $body-bc;
     box-sizing: border-box;
+  }
+  &__header {
+    overflow: hidden;
   }
   &__title {
     display: flex;
