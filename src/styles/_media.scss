@@ -26,12 +26,7 @@
     }
     &__description-container {
       margin: 18px 48px 16px 24px;
-      height: 140px;
-      overflow: hidden;
     }
-    // &__button {
-    //   margin: 0 24px 16px;
-    // }
     &__description-images {
       width: 50%;
     }
@@ -92,13 +87,8 @@
     &__title {
       padding: 24px 24px 32px;
       position: relative;
-      z-index: 1000;
+      z-index: 5;
     }
-    // &__repair {
-    //   display: flex;
-    //   align-items: center;
-    //   list-style-type: none;
-    // }
     &__list {
       overflow: hidden;
       justify-content: flex-start;
@@ -131,12 +121,6 @@
       margin-right: 16px;
       margin-left: 140px;
     }
-    // &__repair {
-    //   display: flex;
-    //   align-items: center;
-    //   list-style-type: none;
-    //   margin-right: 16px;
-    // }
     &__list-item_repair::before {
       content: "Оставить заявку";
       width: 125px;
@@ -168,4 +152,33 @@
       top: 0px;
     }
   }
+
+
+}
+
+
+  
+
+@media screen and (min-width: 1440px) {
+  .content {
+    &__body {
+      margin: 0 auto;
+      width: 1440px;
+      min-height: 1160px;
+    }
+    &__block {
+      position: absolute;
+      left: 320px;
+      width: 1120px;
+    }
+    .menu {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0px;
+      height: 100%;
+    }
+  }
+
 }
