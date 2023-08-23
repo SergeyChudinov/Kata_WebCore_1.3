@@ -767,10 +767,11 @@ body {
   }
   .content .menu {
     display: block;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0px;
-    height: 100%;
+  }
+  .content .menu__list-item_cross {
+    display: none;
+  }
+  .content .menu__list-item_group {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */
