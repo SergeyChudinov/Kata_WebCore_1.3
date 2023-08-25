@@ -38,7 +38,7 @@
     flex-shrink: 0;
     cursor: pointer;
     padding: 16px;
-    transition: opacity 300ms;
+    transition-duration: 300ms;
   }
 	&__item:hover {
 		transform: scale(1.05);

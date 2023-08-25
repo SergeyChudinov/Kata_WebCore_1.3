@@ -1,0 +1,40 @@
+.price {
+	&__item {
+		position: relative;
+    display: flex;
+		flex-direction: column;
+    height: 200px;
+    border-radius: 6px;
+    border: 1px solid $brands-item-br;
+    background: $header-bc;
+    box-sizing: border-box;
+    flex-shrink: 0;
+		text-decoration: none;
+    cursor: pointer;
+    padding: 16px;
+  }
+	&__service {
+		color: $brands-title-c;
+		font-family: TT Lakes;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 16px;
+		opacity: 0.7218;
+		margin-bottom: 4px;
+	}
+	&__definition {
+		color: $menu-text-c;
+		font-family: TT Lakes;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px;
+		letter-spacing: 0.2px;
+		margin-bottom: 16px;
+	}
+	&__container {
+		width: 200px;
+		margin-right: 200px;
+	}
+}

@@ -1,0 +1,40 @@
+.button-send {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 119px;
+		height: 32px;
+		flex-shrink: 0;
+		border-radius: 16px;
+		background: $circle-bc;
+		transition-duration: 400ms;
+	}
+	&__wrapper:hover {
+		transform: scale(1.1);
+	}
+	&__text {
+		margin-left: 15px;
+		color: $header-bc;
+		text-align: right;
+		font-family: TT Lakes;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: -0.15px;
+		text-transform: uppercase;
+	}
+	&__arrow {
+		margin-right: 15px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid $header-bc;
+    border-bottom: 2px solid $header-bc;
+    transform: rotate(-45deg);
+	}
+}
+
