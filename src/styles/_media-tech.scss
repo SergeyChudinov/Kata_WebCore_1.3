@@ -1,13 +1,14 @@
 @media screen and (max-width: 767px) {
+	.brands {
+		width: 224px;
+	}
 	.technique {
-		&__slide {
-			width: 224px;
-		}
+		width: 224px;
 	}
 }
 
 @media screen and (min-width: 767px) {
-	.technique {
+	.tech {
 		&__wrapper {
 			display: flex;
 			flex-wrap: wrap;
@@ -18,11 +19,14 @@
 		&__pagination {
 			display: none;
 		}
+		& button {
+			display: flex;
+		}
 	}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1119px) {
-	.technique {
+	.tech {
 		&__body {
 			margin: 0 auto;
 			min-width: 768px;
@@ -34,11 +38,10 @@
 		&__container {
 			padding: 24px 12px;
 		}
-		&__slide {
-			flex-basis: calc(33.33% - 24px);
-  		margin: 12px ;
+		&:not(.show-more) .technique:nth-child(n + 7) {
+			display: none;
 		}
-		&:not(.show-more) .technique__slide:nth-child(n + 7) {
+		&:not(.show-more) .brands:nth-child(n + 7) {
 			display: none;
 		}
 		&__button {
@@ -46,10 +49,18 @@
 			display: flex;
 		}
 	}
+	.brands {
+		flex-basis: calc(33.33% - 24px);
+		margin: 12px ;
+	}
+	.technique {
+		flex-basis: calc(33.33% - 24px);
+		margin: 12px ;
+	}
 }
 
 @media screen and (min-width: 1119px) {
-  .technique {
+	.tech {
 		&__body {
 			margin: 0 auto;
       width: 1120px;
@@ -60,11 +71,10 @@
 		&__container {
 			padding: 32px 16px;
 		}
-		&__slide {
-			flex-basis: calc(25% - 32px);
-  		margin: 16px;
+		&:not(.show-more) .technique:nth-child(n + 9) {
+			display: none;
 		}
-		&:not(.show-more) .technique__slide:nth-child(n + 9) {
+		&:not(.show-more) .brands:nth-child(n + 9) {
 			display: none;
 		}
 		&__button {
@@ -72,4 +82,12 @@
 			display: flex;
 		}
   }
+	.technique {
+		flex-basis: calc(25% - 32px);
+		margin: 16px;
+	}
+	.brands {
+		flex-basis: calc(25% - 32px);
+		margin: 16px;
+	}
 }

@@ -1,5 +1,5 @@
-.brands {
-  &__body {
+.tech {
+	&__body {
     margin: 0 auto 0;
     min-width: 320px;
     overflow: hidden;
@@ -26,22 +26,23 @@
   &__wrapper {
     margin-bottom: 26px;
   }
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 72px;
-    border-radius: 6px;
-    border: 1px solid $brands-item-br;
-    background: $header-bc;
-    box-sizing: border-box;
-    flex-shrink: 0;
+  .swiper-pagination-bullet {
+    display: inline-block;
+    margin: 0 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $brands-label-bc;
     cursor: pointer;
-    padding: 16px;
-    transition: opacity 300ms;
+    transition: background-color 0.2s;
   }
-	&__item:hover {
-		transform: scale(1.05);
-    padding: 16px 20px;
-	}
+  .swiper-pagination-bullet-active {
+    background-color: $brands-label-bc-checked;
+  }
+  .image-slider .swiper-slide {
+    width: auto;
+  }
+  & button {
+    display: none;
+  }
 }

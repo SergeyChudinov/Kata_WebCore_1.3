@@ -10,8 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       if (sliderIsOpened) {
         if (
-          containerSelector === '.brands' ||
-          containerSelector === '.technique'
+          containerSelector === '.tech-top' ||
+          containerSelector === '.tech-middle'
         ) {
           container.classList.remove('show-more');
         } else {
@@ -19,9 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       } else {
         if (
-          containerSelector === '.brands' ||
-          containerSelector === '.technique'
+          containerSelector === '.tech-top' ||
+          containerSelector === '.tech-middle'
         ) {
+          console.log('click');
           container.classList.add('show-more');
         } else {
           container.style.display = 'block';
@@ -42,16 +43,16 @@ window.addEventListener('DOMContentLoaded', () => {
     '.content__button p',
   );
   openUpContent(
-    '.brands__button',
-    '.brands',
-    '.brands__button img',
-    '.brands__button p',
+    '.tech-top__button',
+    '.tech-top',
+    '.tech-top__button img',
+    '.tech-top__button p',
   );
   openUpContent(
-    '.technique__button',
-    '.technique',
-    '.technique__button img',
-    '.technique__button p',
+    '.tech-middle__button',
+    '.tech-middle',
+    '.tech-middle__button img',
+    '.tech-middle__button p',
   );
 
   function menuToggle() {
