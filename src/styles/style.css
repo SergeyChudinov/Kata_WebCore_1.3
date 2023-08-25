@@ -13,7 +13,7 @@ body {
 .content__body {
   position: relative;
   padding-top: 88px;
-  margin: 0 auto 0;
+  margin: 0 auto;
   min-width: 320px;
   min-height: 509px;
   background: #f8f8f8;
@@ -653,6 +653,61 @@ body {
   transform: rotate(-45deg);
 }
 
+.footer {
+  margin: 0 auto;
+  min-width: 320px;
+}
+.footer__top {
+  min-width: 320px;
+  padding: 16px;
+  margin-bottom: 57px;
+}
+.footer__text {
+  max-width: 421px;
+  color: #1B1C21;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+.footer__title {
+  text-decoration: none;
+  display: inline-block;
+  max-width: 305px;
+  color: #1B1C21;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.footer__title span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #FF3E79;
+  border-bottom: 2px solid #FF3E79;
+  transform: rotate(-45deg);
+}
+.footer__bottom {
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 16px;
+}
+.footer__description {
+  color: #7E7E82;
+  text-align: center;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
 @media screen and (min-width: 767px) {
   .content__body {
     margin: 0 auto;
@@ -928,5 +983,45 @@ body {
   .brands {
     flex-basis: calc(25% - 32px);
     margin: 16px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer {
+    padding: 0 24px;
+  }
+  .footer__text {
+    width: 421px;
+  }
+  .footer__title {
+    width: 305px;
+  }
+  .footer__title span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #FF3E79;
+    border-bottom: 2px solid #FF3E79;
+    transform: rotate(-45deg);
+  }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__description {
+    width: 215px;
+  }
+}
+@media screen and (min-width: 1119px) {
+  .footer {
+    margin: 0 auto;
+    width: 1120px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .footer {
+    position: relative;
+    left: 160px;
+    width: 1120px;
   }
 }/*# sourceMappingURL=style.css.map */

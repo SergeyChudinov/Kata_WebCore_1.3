@@ -1,0 +1,55 @@
+.footer {
+	margin: 0 auto;
+	min-width: 320px;
+	&__top {
+		min-width: 320px;
+		padding: 16px;
+		margin-bottom: 57px;
+	}
+	&__text {
+		max-width: 421px;
+		color: #1B1C21;
+		font-family: TT Lakes;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		margin-bottom: 10px;
+	}
+	&__title {
+		text-decoration: none;
+		display: inline-block;
+		max-width: 305px;
+		color: #1B1C21;
+		font-family: TT Lakes;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+	}
+	&__title span {
+		display: inline-block;
+		width: 10px;
+    height: 10px;
+    border-right: 2px solid $brands-icon-c;
+    border-bottom: 2px solid $brands-icon-c;
+    transform: rotate(-45deg);
+	}
+	&__bottom {
+		margin: 0 auto;
+		min-width: 320px;
+		padding: 16px;
+	}
+	&__description {
+		color: #7E7E82;
+		text-align: center;
+		font-family: TT Lakes;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 16px;
+	}
+}
+
