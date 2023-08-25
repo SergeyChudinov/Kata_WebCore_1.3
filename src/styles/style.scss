@@ -9,7 +9,6 @@
 
 body {
   background-color: #fcf9f9;
-
 }
 
 .content {
@@ -18,13 +17,10 @@ body {
     padding-top: 88px;
     margin: 0 auto 0;
     min-width: 320px;
-    // overflow: hidden;
+
     min-height: 509px;
     background: $body-bc;
     box-sizing: border-box;
-  }
-  &__header {
-    // overflow: hidden;
   }
   &__title {
     display: flex;
@@ -96,8 +92,6 @@ body {
   }
   &__description-container {
     margin: 0 16px 16px;
-    // height: 140px;
-    // overflow: hidden;
   }
   &__description-text {
     color: #1b1c21;
@@ -216,13 +210,12 @@ body {
   }
 }
 
-
 @import "menu";
 @import "brands";
+@import "tech";
 @import "technique";
 @import "button";
 @import "circle";
 @import "menu-items";
 @import "media";
-@import "media-brands";
-@import "media-technique";
+@import "media-tech";
