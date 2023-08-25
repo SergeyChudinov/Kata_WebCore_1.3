@@ -3,7 +3,6 @@
     margin: 0 auto 0;
     min-width: 320px;
     overflow: hidden;
-    min-height: 234px;
     background: $body-bc;
   }
   &__title {
@@ -19,6 +18,26 @@
     text-transform: uppercase;
 		background: linear-gradient(to right, $body-bc 0%, $header-bc 100%);
     margin-bottom: 16px;
+  }
+  &__title-items {
+    padding: 16px 32px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title-item {
+    color: $brands-title-c;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    opacity: 0.7218;
+  }
+  &__title-container {
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
   }
   &__swiper {
     padding: 16px;

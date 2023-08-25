@@ -1,14 +1,23 @@
 @media screen and (max-width: 767px) {
+	.tech__title-items {
+		display: none;
+	}
 	.brands {
-		width: 224px;
+		width: 240px;
 	}
 	.technique {
-		width: 224px;
+		width: 240px;
+	}
+	.price {
+		width: 260px;
 	}
 }
 
 @media screen and (min-width: 767px) {
 	.tech {
+		&__title-items {
+			
+		}
 		&__wrapper {
 			display: flex;
 			flex-wrap: wrap;
@@ -21,6 +30,27 @@
 		}
 		& button {
 			display: flex;
+		}
+		&__wrapper_bottom {
+			padding: 16px;
+		}
+	}
+	.price {
+		border-radius: 6px;
+		&__item {
+			height: 64px;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&__service {
+			display: none;
+		}
+		&__price__definition_small_small {
+			width: 140px;
+		}
+		&__container {
+			display: flex;
+			justify-content: space-between;
 		}
 	}
 }

@@ -119,4 +119,13 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 'auto',
     spaceBetween: 16,
   });
+  resizableSwiper('(max-width: 768px)', '.slider-3', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+  });
 });

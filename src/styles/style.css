@@ -402,7 +402,7 @@ body {
   flex-shrink: 0;
   cursor: pointer;
   padding: 16px;
-  transition: opacity 300ms;
+  transition-duration: 300ms;
 }
 .brands__item:hover {
   transform: scale(1.05);
@@ -413,7 +413,6 @@ body {
   margin: 0 auto 0;
   min-width: 320px;
   overflow: hidden;
-  min-height: 234px;
   background: #f8f8f8;
 }
 .tech__title {
@@ -429,6 +428,26 @@ body {
   text-transform: uppercase;
   background: linear-gradient(to right, #f8f8f8 0%, #fff 100%);
   margin-bottom: 16px;
+}
+.tech__title-items {
+  padding: 16px 32px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.tech__title-item {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+}
+.tech__title-container {
+  margin-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
 }
 .tech__swiper {
   padding: 16px;
@@ -469,7 +488,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   padding: 16px;
-  transition: opacity 300ms;
+  transition-duration: 300ms;
 }
 .technique__item:hover {
   transform: scale(1.05);
@@ -555,7 +574,86 @@ body {
   background: #FF3E79 url("../images/profile.svg") no-repeat center;
 }
 
-@media screen and (min-width: 768px) {
+.price__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 16px;
+}
+.price__service {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+  margin-bottom: 4px;
+}
+.price__definition {
+  color: #1B1C21;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+}
+.price__container {
+  width: 200px;
+  margin-right: 200px;
+}
+
+.button-send {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+.button-send__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 119px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #FF3E79;
+  transition-duration: 400ms;
+}
+.button-send__wrapper:hover {
+  transform: scale(1.1);
+}
+.button-send__text {
+  margin-left: 15px;
+  color: #fff;
+  text-align: right;
+  font-family: TT Lakes;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+}
+.button-send__arrow {
+  margin-right: 15px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 767px) {
   .content__body {
     margin: 0 auto;
     min-width: 768px;
@@ -622,7 +720,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1119px) {
   .content__body {
     margin: 0 auto;
     width: 1120px;
@@ -700,7 +798,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1439px) {
   .content__body {
     margin: 0 auto;
     width: 1440px;
@@ -722,11 +820,17 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .tech__title-items {
+    display: none;
+  }
   .brands {
-    width: 224px;
+    width: 240px;
   }
   .technique {
-    width: 224px;
+    width: 240px;
+  }
+  .price {
+    width: 260px;
   }
 }
 @media screen and (min-width: 767px) {
@@ -742,6 +846,27 @@ body {
   }
   .tech button {
     display: flex;
+  }
+  .tech__wrapper_bottom {
+    padding: 16px;
+  }
+  .price {
+    border-radius: 6px;
+  }
+  .price__item {
+    height: 64px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .price__service {
+    display: none;
+  }
+  .price__price__definition_small_small {
+    width: 140px;
+  }
+  .price__container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1119px) {
