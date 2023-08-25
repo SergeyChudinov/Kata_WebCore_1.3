@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
   }
   &__header {
-    overflow: hidden;
+    // overflow: hidden;
   }
   &__title {
     display: flex;
@@ -219,6 +219,10 @@ body {
 
 @import "menu";
 @import "brands";
-@import "brands-button";
+@import "technique";
+@import "button";
+@import "circle";
 @import "menu-items";
 @import "media";
+@import "media-brands";
+@import "media-technique";

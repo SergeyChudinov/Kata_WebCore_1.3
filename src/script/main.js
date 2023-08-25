@@ -1,34 +1,46 @@
 window.addEventListener('DOMContentLoaded', () => {
-  function openUpContent(btn, container, img, text) {
-    const brandBtn = document.querySelector(btn);
-    const brands = document.querySelector(container);
+  function openUpContent(btnSelector, containerSelector, img, text) {
+    const btn = document.querySelector(btnSelector);
+    const container = document.querySelector(containerSelector);
     const buttonImg = document.querySelector(img);
     const buttonText = document.querySelector(text);
 
     let sliderIsOpened = false;
 
-    brandBtn.addEventListener('click', () => {
+    btn.addEventListener('click', () => {
       if (sliderIsOpened) {
-        if (container === '.brands') {
-          brands.classList.remove('show-more');
-        } else if (container === '.content__description-text_display_none') {
-          brands.style.display = 'none';
+        if (
+          containerSelector === '.brands' ||
+          containerSelector === '.technique'
+        ) {
+          container.classList.remove('show-more');
+        } else {
+          container.style.display = 'none';
         }
-        buttonImg.style.transform = 'rotate(0deg)';
-        buttonText.textContent = 'Показать все';
       } else {
-        if (container === '.brands') {
-          brands.classList.add('show-more');
-        } else if (container === '.content__description-text_display_none') {
-          brands.style.display = 'block';
+        if (
+          containerSelector === '.brands' ||
+          containerSelector === '.technique'
+        ) {
+          container.classList.add('show-more');
+        } else {
+          container.style.display = 'block';
         }
-        buttonImg.style.transform = 'rotate(180deg)';
-        buttonText.textContent = 'Скрыть';
       }
+      buttonImg.style.transform = sliderIsOpened
+        ? 'rotate(0deg)'
+        : 'rotate(180deg)';
+      buttonText.textContent = sliderIsOpened ? 'Показать все' : 'Скрыть';
       sliderIsOpened = !sliderIsOpened;
     });
   }
 
+  openUpContent(
+    '.content__button',
+    '.content__description-text_display_none',
+    '.content__button img',
+    '.content__button p',
+  );
   openUpContent(
     '.brands__button',
     '.brands',
@@ -36,10 +48,10 @@ window.addEventListener('DOMContentLoaded', () => {
     '.brands__button p',
   );
   openUpContent(
-    '.content__button',
-    '.content__description-text_display_none',
-    '.content__button img',
-    '.content__button p',
+    '.technique__button',
+    '.technique',
+    '.technique__button img',
+    '.technique__button p',
   );
 
   function menuToggle() {
@@ -89,6 +101,15 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   resizableSwiper('(max-width: 768px)', '.slider-1', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+  });
+  resizableSwiper('(max-width: 768px)', '.slider-2', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',

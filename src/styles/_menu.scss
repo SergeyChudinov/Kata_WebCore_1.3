@@ -6,6 +6,7 @@
   left: 0;
 	height: 100%;
 	&__body {
+		position: fixed;
 		margin: 0 auto;
 		min-height: 100%;
 		display: flex;
@@ -130,7 +131,7 @@
 	&__footer input {
 		display: none;
 	}
-	fieldset {
+	&__fieldset {
 		border: none;
 	}
 	&__footer label {
@@ -159,5 +160,4 @@
 	}
 }
  
-@import "menu-items";
 
