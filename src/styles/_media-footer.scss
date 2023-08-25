@@ -1,0 +1,44 @@
+@media screen and (min-width: 767px) {
+	.footer {
+		padding: 0 24px;
+		&__top {
+		}
+		&__text {
+			width: 421px;
+		}
+		&__title {
+			width: 305px;
+		}
+		&__title span {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-right: 2px solid $brands-icon-c;
+			border-bottom: 2px solid $brands-icon-c;
+			transform: rotate(-45deg);
+		}
+		&__bottom {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__description {
+			width: 215px;
+		}
+	}
+}
+
+@media screen and (min-width: 1119px) {
+	.footer {
+		margin: 0 auto;
+		width: 1120px;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (min-width: 1439px) {
+	.footer {
+		position: relative;
+		left: 160px;
+		width: 1120px;
+	}
+}
