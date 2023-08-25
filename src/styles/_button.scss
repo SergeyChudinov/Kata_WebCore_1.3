@@ -1,15 +1,9 @@
-.brands-button {
+.button {
   margin: 0 24px 34px;
   height: 24px;
   border: none;
   background-color: $body-bc;
   cursor: pointer;
-  color: $menu-text-c;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
   &__images {
     margin-right: 8px;
   }

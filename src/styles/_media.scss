@@ -162,9 +162,10 @@
       margin: 0 auto;
       width: 1440px;
       min-height: 1160px;
+      // overflow: scroll;
     }
     &__block {
-      position: absolute;
+      position: relative;
       left: 320px;
       width: 1120px;
     }
