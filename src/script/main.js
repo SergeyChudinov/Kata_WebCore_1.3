@@ -192,10 +192,10 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   const mask = (selector) => {
-    function createMask(event) {
-      let matrix = '+7 (___) ___ __ __';
+    function createMask() {
+      const matrix = '+7 (___) ___ __ __';
       let i = 0;
-      let def = matrix.replace(/\D/g, '');
+      const def = matrix.replace(/\D/g, '');
       let val = this.value.replace(/\D/g, '');
       if (def.length >= val.length) {
         val = def;
@@ -205,7 +205,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    let inputs = document.querySelectorAll(selector);
+    const inputs = document.querySelectorAll(selector);
     inputs.forEach(input => {
       input.addEventListener('input', createMask);
       input.addEventListener('focus', createMask);
@@ -214,4 +214,19 @@ window.addEventListener('DOMContentLoaded', () => {
   };
   
   mask('[name="phone"]');
+
+  const checkTextInputs = selector => {
+    const txtInputs = document.querySelectorAll(selector);
+
+    txtInputs.forEach(input => {
+      input.addEventListener('keypress', function (e) {
+        if (e.key.match(/[^а-яё 0-9]/gi)) {
+          e.preventDefault();
+        }
+      });
+    });
+  };
+
+  checkTextInputs('[name="name"]');
+  checkTextInputs('[name="message"]');
 });
