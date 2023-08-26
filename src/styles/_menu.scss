@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
 	height: 100%;
+	width: 320px;
 	&__body {
 		position: fixed;
 		margin: 0 auto;
@@ -44,10 +45,6 @@
 	&__list-item:hover {
 		opacity: 0.7;
 		transform: scale(1.05);
-	}
-	&__list-item_cross {
-		border-radius: 50%;
-    background: $circle-bc url("../images/cross.svg")  no-repeat center;
 	}
 	&__list-item_group {
 		width: 97px;
@@ -157,5 +154,3 @@
 		opacity: 0.7;
 	}
 }
- 
-

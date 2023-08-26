@@ -1,0 +1,13 @@
+	.cross {
+		width: 40px;
+    height: 40px;
+		border: none;
+		border-radius: 50%;
+    background: $circle-bc url("../images/cross.svg")  no-repeat center;
+		opacity: 1;
+		transition: opacity 300ms;
+	}
+	.cross:hover {
+		opacity: 0.7;
+		transform: scale(1.05);
+	}

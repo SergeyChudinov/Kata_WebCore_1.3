@@ -9,7 +9,7 @@
 	}
 	&__text {
 		max-width: 421px;
-		color: #1B1C21;
+		color: $menu-text-c;
 		font-family: TT Lakes;
 		font-size: 14px;
 		font-style: normal;
@@ -22,7 +22,7 @@
 		text-decoration: none;
 		display: inline-block;
 		max-width: 305px;
-		color: #1B1C21;
+		color: $menu-text-c;
 		font-family: TT Lakes;
 		font-size: 16px;
 		font-style: normal;
@@ -50,7 +50,7 @@
 		padding: 16px;
 	}
 	&__description {
-		color: #7E7E82;
+		color: $brands-title-c;
 		text-align: center;
 		font-family: TT Lakes;
 		font-size: 14px;

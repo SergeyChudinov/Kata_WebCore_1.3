@@ -14,7 +14,6 @@ body {
 .content {
   &__body {
     position: relative;
-    padding-top: 88px;
     margin: 0 auto;
     min-width: 320px;
     min-height: 509px;
@@ -24,7 +23,7 @@ body {
   &__title {
     display: flex;
     padding: 24px 16px 24px;
-    color: #1b1c21;
+    color: $menu-text-c;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -79,7 +78,7 @@ body {
     padding: 6px 6px;
   }
   &__text {
-    color: #7e7e82;
+    color: $brands-title-c;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -93,7 +92,7 @@ body {
     margin: 0 16px 16px;
   }
   &__description-text {
-    color: #1b1c21;
+    color: $menu-text-c;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -209,7 +208,7 @@ body {
   }
 }
 
-@import "menu";
+@import "cross";
 @import "brands";
 @import "tech";
 @import "technique";
@@ -217,11 +216,14 @@ body {
 @import "circle";
 @import "menu-items";
 @import "price";
-@import "button-send";
 @import "footer";
+@import "modal";
+@import "menu";
+@import "button-send";
 @import "media";
 @import "media-tech";
 @import "media-footer";
+@import "media-modal";
 
 
 

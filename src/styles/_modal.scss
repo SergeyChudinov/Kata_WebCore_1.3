@@ -1,0 +1,62 @@
+.modal {
+	display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 320px;
+	height: 100%;
+	&__body {
+		position: fixed;
+		margin: 0 auto;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		width: 320px;
+		padding: 24px 16px;
+		box-sizing: border-box;
+		background: $header-bc;
+	}
+	&__cross {
+		margin-bottom: 40px;
+	}
+	&__title {
+		position: relative;
+		color: $menu-text-c;
+		font-family: TT Lakes;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		margin-bottom: 24px;
+	}
+	&__title::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: -16px;
+    top: -5px;
+  }
+  &__title::before {
+    background: url("../images/highlight.svg") center center no-repeat;
+  }
+	&__description {
+		margin-bottom: 20px;
+		color: $brands-title-c;
+		font-family: TT Lakes;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 16px;
+	}
+	&__description span {
+		color: $brands-icon-c;
+	}
+	&__button {
+		position: relative;
+		left: 152px;
+	}
+}
+
