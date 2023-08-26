@@ -44,6 +44,7 @@
   }
   &__wrapper {
     margin-bottom: 26px;
+    box-sizing: border-box;
   }
   .swiper-pagination-bullet {
     display: inline-block;
