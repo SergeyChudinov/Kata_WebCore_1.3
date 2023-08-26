@@ -1,0 +1,11 @@
+@media screen and (min-width: 1439px) {
+  .modal {
+		&__body {
+			width: 440px;
+			padding: 40px 32px;
+		}
+		&__title::before {
+			left: -32px;
+		}
+	}
+}

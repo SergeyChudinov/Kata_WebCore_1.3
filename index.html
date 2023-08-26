@@ -14,12 +14,12 @@
     <section class="content">
       <div class="content__body">
 
-        <section class="menu">
+        <section class="modal modal_menu menu">
           <div class="menu__body">
             <div class="menu__container">
               <div class="menu__header">
                 <div class="menu__list">
-                  <button class="menu__list-item menu__list-item_cross"></button>
+                  <button class="cross cross_menu"></button>
                   <button class="menu__list-item_group"></button>
                 </div>
                 <div class="menu__list">
@@ -71,6 +71,39 @@
                 <input type="radio" name="lang" id="ch">
                 <label for="ch">CH</label>
               </fieldset>
+            </div>
+          </div>
+        </section>
+
+        <section class="modal modal_call modal_close">
+          <div class="modal__body">
+            <button class="cross cross_call modal__cross"></button>
+            <h1 class="modal__title">Заказать звонок</h1>
+            <p class="modal__description">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
+                данных</span> и соглашаетесь с нашей <span>политикой
+                конфиденциальности</span></p>
+            <div class="modal__button button-send">
+              <div class="button-send__wrapper">
+                <p class="button-send__text">ОТПРАВИТЬ</p>
+                <div class="button-send__arrow"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="modal modal_chat modal_close">
+          <div class="modal__body">
+            <button class="cross cross_chat modal__cross"></button>
+            <h1 class="modal__title">Обратная связь</h1>
+            <p class="modal__description">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
+                данных</span> и
+              соглашаетесь с нашей <span>политикой
+                конфиденциальности</span></p>
+            <div class="modal__button button-send">
+              <div class="button-send__wrapper">
+                <p class="button-send__text">ОТПРАВИТЬ</p>
+                <div class="button-send__arrow"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -415,7 +448,7 @@
                         <h3 class="price__service">Срок</h3>
                         <p class="price__definition">30 мин</p>
                       </div>
-                      <div class="button-send">
+                      <div class="price__button button-send">
                         <div class="button-send__wrapper">
                           <p class="button-send__text">Заказать</p>
                           <div class="button-send__arrow"></div>
@@ -433,7 +466,7 @@
                         <h3 class="price__service">Срок</h3>
                         <p class="price__definition  price__definition_small_small">30-120 мин</p>
                       </div>
-                      <div class="button-send">
+                      <div class="price__button button-send">
                         <div class="button-send__wrapper">
                           <p class="button-send__text">Заказать</p>
                           <div class="button-send__arrow"></div>
@@ -451,7 +484,7 @@
                         <h3 class="price__service">Срок</h3>
                         <p class="price__definition  price__definition_small_small">30-120 мин</p>
                       </div>
-                      <div class="button-send">
+                      <div class="price__button button-send">
                         <div class="button-send__wrapper">
                           <p class="button-send__text">Заказать</p>
                           <div class="button-send__arrow"></div>
@@ -469,7 +502,7 @@
                         <h3 class="price__service">Срок</h3>
                         <p class="price__definition  price__definition_small_small">30-120 мин</p>
                       </div>
-                      <div class="button-send">
+                      <div class="price__button button-send">
                         <div class="button-send__wrapper">
                           <p class="button-send__text">Заказать</p>
                           <div class="button-send__arrow"></div>
@@ -487,7 +520,7 @@
                         <h3 class="price__service">Срок</h3>
                         <p class="price__definition">30-120 мин</p>
                       </div>
-                      <div class="button-send">
+                      <div class="price__button button-send">
                         <div class="button-send__wrapper">
                           <p class="button-send__text">Заказать</p>
                           <div class="button-send__arrow"></div>
@@ -507,7 +540,8 @@
   <footer>
     <section class="footer">
       <div class="footer__top">
-        <p class="footer__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого
+        <p class="footer__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для
+          получения коммерческого
           предложения на
           постоянное обслуживание, оставьте заявку.</p>
         <a class="footer__title" href="#">Получить коммерческое предложение <span></span></a>
