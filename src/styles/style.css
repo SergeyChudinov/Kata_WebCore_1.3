@@ -314,6 +314,9 @@ body {
 .tech .image-slider .swiper-slide {
   width: auto;
 }
+.tech button {
+  display: none;
+}
 
 .technique__item {
   display: flex;
