@@ -8,7 +8,6 @@
     border: 1px solid $brands-item-br;
     background: $header-bc;
     box-sizing: border-box;
-    flex-shrink: 0;
 		text-decoration: none;
     cursor: pointer;
     padding: 16px;
@@ -21,9 +20,7 @@
 	&__name {
 		text-decoration: none;
 		color: $menu-text-c;
-		font-family: TT Lakes;
 		font-size: 16px;
-		font-style: normal;
 		font-weight: 500;
 		line-height: 24px;
 		letter-spacing: -0.2px;

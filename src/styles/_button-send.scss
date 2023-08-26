@@ -5,7 +5,6 @@
 		align-items: center;
 		width: 119px;
 		height: 32px;
-		flex-shrink: 0;
 		border-radius: 16px;
 		background: $circle-bc;
 		transition-duration: 400ms;
@@ -17,9 +16,7 @@
 		margin-left: 15px;
 		color: $header-bc;
 		text-align: right;
-		font-family: TT Lakes;
 		font-size: 12px;
-		font-style: normal;
 		font-weight: 700;
 		line-height: 24px;
 		letter-spacing: -0.15px;
