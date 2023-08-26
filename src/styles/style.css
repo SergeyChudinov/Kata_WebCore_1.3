@@ -1115,4 +1115,7 @@ body {
   .modal__title::before {
     left: -32px;
   }
+  .modal__button {
+    left: 272px;
+  }
 }/*# sourceMappingURL=style.css.map */
