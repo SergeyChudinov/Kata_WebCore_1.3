@@ -4,11 +4,16 @@
 			width: 440px;
 			padding: 40px 32px;
 		}
+		&__cross {
+			position: absolute;
+			left: -70px;
+			top: 35px;
+		}
 		&__title::before {
 			left: -32px;
 		}
 		&__button {
-			left: 272px;
+			left: 262px;
 		}
 	}
 }

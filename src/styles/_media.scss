@@ -102,6 +102,7 @@
 
   .header {
     &__body {
+      position: absolute;
       background: $body-bc;
       border-bottom: none;
       width: 1120px;

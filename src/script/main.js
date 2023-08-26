@@ -69,8 +69,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const contentBlock = document.querySelector('.content__block');
     const footerBlock = document.querySelector('.footer');
 
-    const csroll = calcScroll();
-
     function calcScroll() {
       const div = document.createElement('div');
       div.style.width = '50px';
@@ -83,6 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
       div.remove();
       return scrollWidth;
     }
+    const csroll = calcScroll();
 
     function filterToggle(grayscale, blur, opacity, overflow, scroll) {
       contentBlock.style.filter = `grayscale(${grayscale}) blur(${blur}) opacity(${opacity})`;
@@ -93,6 +92,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     openBtn.forEach(btn => {
       btn.addEventListener('click', e => {
+        e.stopImmediatePropagation();
         if (window.innerWidth > 1120) {
           modalsClose.forEach(mod => {
             mod.style.display = 'none';
@@ -102,7 +102,6 @@ window.addEventListener('DOMContentLoaded', () => {
           modals.forEach(mod => {
             mod.style.display = 'none';
           });
-          e.stopImmediatePropagation();
           modal.style.display = 'block';
         }
         filterToggle('80%', '5px', '0.5', 'hidden', csroll);

@@ -15,6 +15,7 @@ body {
   &__body {
     position: relative;
     margin: 0 auto;
+    // padding-top: 88px;
     min-width: 320px;
     min-height: 509px;
     background: $body-bc;
@@ -120,7 +121,8 @@ body {
 
 .header {
   &__body {
-    position: absolute;
+    // position: absolute;
+    // top: -88px;
     top: 0;
     right: 0;
     width: 100%;

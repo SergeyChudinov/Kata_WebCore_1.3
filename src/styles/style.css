@@ -116,7 +116,6 @@ body {
 }
 
 .header__body {
-  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
@@ -883,6 +882,7 @@ body {
     display: none;
   }
   .header__body {
+    position: absolute;
     background: #f8f8f8;
     border-bottom: none;
     width: 1120px;
@@ -1112,10 +1112,15 @@ body {
     width: 440px;
     padding: 40px 32px;
   }
+  .modal__cross {
+    position: absolute;
+    left: -70px;
+    top: 35px;
+  }
   .modal__title::before {
     left: -32px;
   }
   .modal__button {
-    left: 272px;
+    left: 262px;
   }
 }/*# sourceMappingURL=style.css.map */
