@@ -69,10 +69,26 @@ window.addEventListener('DOMContentLoaded', () => {
     const contentBlock = document.querySelector('.content__block');
     const footerBlock = document.querySelector('.footer');
 
-    function filterToggle(grayscale, blur, opacity, overflow) {
+    const csroll = calcScroll();
+
+    function calcScroll() {
+      const div = document.createElement('div');
+      div.style.width = '50px';
+      div.style.height = '50px';
+      div.style.overflowY = 'scroll';
+      div.style.visibility = 'hidden';
+
+      document.body.appendChild(div);
+      const scrollWidth = div.offsetWidth - div.clientWidth;
+      div.remove();
+      return scrollWidth;
+    }
+
+    function filterToggle(grayscale, blur, opacity, overflow, scroll) {
       contentBlock.style.filter = `grayscale(${grayscale}) blur(${blur}) opacity(${opacity})`;
       footerBlock.style.filter = `grayscale(${grayscale}) blur(${blur}) opacity(${opacity})`;
       document.body.style.overflow = overflow;
+      document.body.style.marginRight = `${scroll}px`;
     }
 
     openBtn.forEach(btn => {
@@ -89,13 +105,13 @@ window.addEventListener('DOMContentLoaded', () => {
           e.stopImmediatePropagation();
           modal.style.display = 'block';
         }
-        filterToggle('80%', '5px', '0.5', 'hidden');
+        filterToggle('80%', '5px', '0.5', 'hidden', csroll);
       });
     });
 
     closeBtn.addEventListener('click', () => {
       modal.style.display = 'none';
-      filterToggle('0', '0', '1', '');
+      filterToggle('0', '0', '1', '', '0');
     });
 
     content.addEventListener('click', e => {
