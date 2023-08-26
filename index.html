@@ -79,15 +79,18 @@
           <div class="modal__body">
             <button class="cross cross_call modal__cross"></button>
             <h1 class="modal__title">Заказать звонок</h1>
-            <p class="modal__description">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
-                данных</span> и соглашаетесь с нашей <span>политикой
-                конфиденциальности</span></p>
-            <div class="modal__button button-send">
-              <div class="button-send__wrapper">
-                <p class="button-send__text">ОТПРАВИТЬ</p>
-                <div class="button-send__arrow"></div>
+            <form class="modal__form_call" action="#">
+              <input class="modal__phone" type="number" placeholder="Телефон">
+              <p class="modal__description">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
+                  данных</span> и соглашаетесь с нашей <span>политикой
+                  конфиденциальности</span></p>
+              <div class="modal__button button-send">
+                <div class="button-send__wrapper">
+                  <p class="button-send__text">ОТПРАВИТЬ</p>
+                  <div class="button-send__arrow"></div>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </section>
 
@@ -95,16 +98,22 @@
           <div class="modal__body">
             <button class="cross cross_chat modal__cross"></button>
             <h1 class="modal__title">Обратная связь</h1>
-            <p class="modal__description">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
-                данных</span> и
-              соглашаетесь с нашей <span>политикой
-                конфиденциальности</span></p>
-            <div class="modal__button button-send">
-              <div class="button-send__wrapper">
-                <p class="button-send__text">ОТПРАВИТЬ</p>
-                <div class="button-send__arrow"></div>
+            <form class="modal__form_call" action="#">
+              <input class="modal__name" type="text" placeholder="Имя">
+              <input class="modal__phone" type="number" placeholder="Телефон">
+              <input class="modal__mail" type="email" placeholder="Электронная почта">
+              <textarea name="mesage"  cols="30" rows="10"></textarea>
+              <p class="modal__description">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
+                  данных</span> и
+                соглашаетесь с нашей <span>политикой
+                  конфиденциальности</span></p>
+              <div class="modal__button button-send">
+                <div class="button-send__wrapper">
+                  <p class="button-send__text">ОТПРАВИТЬ</p>
+                  <div class="button-send__arrow"></div>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </section>
 
