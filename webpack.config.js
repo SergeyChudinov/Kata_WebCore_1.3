@@ -2,24 +2,21 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
+const isDev = process.env.NODE_ENV === 'development'
+const isProd = !isDev
 
 module.exports = {
-  // Входной файл
-  entry: [
-    './src/js/index.js'
-  ],
-
-  // Выходной файл
+  entry: ['./src/js/index.js'],
   output: {
-    filename: './js/bundle.js'
+    filename: './js/bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
-
-  // Source maps для удобства отладки
-  devtool: "source-map",
-
+  mode: 'development',
+  devtool: isDev ? 'source-map' : false,
   module: {
     rules: [
-      // Транспилируем js с babel
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
@@ -27,66 +24,58 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ['@babel/preset-env']
           }
         }
       },
-
-      // Компилируем SCSS в CSS
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // Extract css to separate file
-          'css-loader', // translates CSS into CommonJS
-          'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
-          'sass-loader', // compiles Sass to CSS, using Node Sass by default
-        ],
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
+        ]
       },
-
-      // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
             loader: 'file-loader?name=./fonts/[name].[ext]'
-          },
+          }
         ]
       },
-
-      // Подключаем картинки из css
       {
-        test: /\.(svg|png|jpg|jpeg|webp)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./static/[name].[ext]'
-          },
-        ]
-      },
-    ],
+        test: /\.(png|jpg|svg|gif)$/,
+        type: 'asset/resource'
+      }
+    ]
   },
   plugins: [
-    // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
       title: 'Webpack 4 Starter',
       template: './src/index.html',
       inject: true,
       minify: {
         removeComments: true,
-        collapseWhitespace: false,
+        collapseWhitespace: false
       }
     }),
-
-    // Кладем стили в отдельный файлик
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].css'
     }),
-
-    // Копируем картинки
-    new CopyWebpackPlugin([
-      {
-        from: './src/img',
-        to: 'img',
-      },
-    ])
-  ],
-};
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/img',
+          to: 'img'
+        }
+      ]
+    })
+  ]
+}
