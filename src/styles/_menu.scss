@@ -52,12 +52,12 @@
 		margin-left: 16px;
     border: none;
     background-color: $header-bc;
-		background-image: url("../images/Group.svg");
+		background-image: url("../img/Group.svg");
 		padding-right: 78px;
 	}
 	&__list-item_search {
 		border-radius: 50%;
-    background: $circle-bc url("../images/search.svg")  no-repeat center;
+    background: $circle-bc url("../img/search.svg")  no-repeat center;
 	}
 	&__catalog {
 		list-style-type: none;
@@ -82,7 +82,7 @@
 		border-radius: 0 4px 4px 0;
 	}
 	&__catalog-item:hover::before {
-		background: url("../images/highlight.svg") center center no-repeat;
+		background: url("../img/highlight.svg") center center no-repeat;
 	}
 	&__text {
 		opacity: 1;

@@ -40,7 +40,7 @@ body {
     top: 0;
   }
   &__title::before {
-    background: url("../images/highlight.svg") center center no-repeat;
+    background: url("../img/highlight.svg") center center no-repeat;
   }
   &__list {
     padding: 0 32px 24px;
@@ -162,22 +162,22 @@ body {
 	}
   &__list-item_burger {
     border-radius: 50%;
-    background: $circle-bc url("../images/burger.svg")  no-repeat center;
+    background: $circle-bc url("../img/burger.svg")  no-repeat center;
   }
   &__list-item_group {
     border: none;
     background-color: $header-bc;
-    background-image: url("../images/Group.svg");
+    background-image: url("../img/Group.svg");
     width: 97px;
     height: 51px;
   }
   &__list-item_repair {
     border-radius: 50%;
-    background: $circle-bc url("../images/repair.svg")  no-repeat center;
+    background: $circle-bc url("../img/repair.svg")  no-repeat center;
   }
   &__list-item_checkstatus {
     border-radius: 50%;
-    background: $circle-bc url("../images/checkstatus.svg")  no-repeat center;
+    background: $circle-bc url("../img/checkstatus.svg")  no-repeat center;
   }
   &__list-item_burger::after {
     content: "";
