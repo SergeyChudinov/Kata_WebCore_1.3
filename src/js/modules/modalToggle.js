@@ -56,8 +56,7 @@ function modalToggle(
     ) {
       modals.forEach((mod) => {
         mod.style.display = 'none'
-        contentBlock.style.filter = 'grayscale(0) blur(0) opacity(1)'
-        footerBlock.style.filter = 'grayscale(0) blur(0) opacity(1)'
+        filterToggle('0', '0', '1', '', '0')
       })
     }
   })
