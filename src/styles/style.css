@@ -314,7 +314,7 @@ body {
 .tech .image-slider .swiper-slide {
   width: auto;
 }
-.tech button {
+.tech .tech-top__button, .tech .tech-middle__button {
   display: none;
 }
 
@@ -1003,7 +1003,7 @@ body {
   .tech__pagination {
     display: none;
   }
-  .tech button {
+  .tech .tech-top__button, .tech .tech-middle__button {
     display: flex;
   }
   .tech__wrapper_bottom {

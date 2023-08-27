@@ -25,9 +25,9 @@
 		&__pagination {
 			display: none;
 		}
-		& button {
-			display: flex;
-		}
+	 .tech-top__button, .tech-middle__button{
+    display: flex;
+  }
 		&__wrapper_bottom {
 			padding: 16px;
 		}
