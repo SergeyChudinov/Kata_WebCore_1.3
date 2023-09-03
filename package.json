@@ -8,8 +8,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
-    "start": "webpack-dev-server --mode development --open",
-    "watch": "webpack --mode development --watch"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch"
   },
   "browserslist": [
     "last 2 versions",

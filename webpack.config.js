@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
-const isProd = !isDev
+
 
 module.exports = {
   entry: ['./src/js/index.js'],
@@ -43,11 +43,7 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
-          }
-        ]
+        type: 'asset/resource'
       },
       {
         test: /\.(png|jpg|svg|gif)$/,
