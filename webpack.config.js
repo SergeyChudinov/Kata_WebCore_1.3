@@ -1,11 +1,27 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserWebpackPlugin = require('terser-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
+const isProd = !isDev
 
+const optimization = () => {
+  const config = {
+    splitChunks: {
+      chunks: 'all'
+    }
+  }
+
+  if (isProd) {
+    config.minimizer = [new CssMinimizerPlugin(), new TerserWebpackPlugin()]
+  }
+
+  return config
+}
 
 module.exports = {
   entry: ['./src/js/index.js'],
@@ -14,6 +30,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   mode: 'development',
+  optimization: optimization(),
   devtool: isDev ? 'source-map' : false,
   module: {
     rules: [
@@ -58,7 +75,7 @@ module.exports = {
       inject: true,
       minify: {
         removeComments: true,
-        collapseWhitespace: false
+        collapseWhitespace: isProd
       }
     }),
     new CleanWebpackPlugin(),
