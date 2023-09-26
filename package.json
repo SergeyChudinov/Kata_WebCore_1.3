@@ -42,7 +42,11 @@
     "sass-loader": "^13.3.2",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "eslint": "^8.47.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "prettier": "3.0.2"
   },
   "engineStrict": true,
   "engines": {
